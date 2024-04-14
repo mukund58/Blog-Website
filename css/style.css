@@ -1,0 +1,251 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav {
+    /* background-color: rgb(192, 100, 100); */
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #dadadd;
+    overflow: hidden;
+}
+
+.nav ::selection {
+    color: var(--main-bg-color);
+    background-color: black;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw 3.3vw;
+    align-items: center;
+
+    /* background-color: aqua; */
+    /* margin-top: 10px; */
+    /* margin-left: 20px; */
+
+}
+
+.logo img {
+    height: 130px;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.nav-part-2 {
+    /* navigation menu */
+    display: flex;
+    align-items: center;
+    margin-right: 3vw;
+    gap: 2vw;
+    font-size: 25px;
+    font-family: var(--font4);
+}
+
+.nav-part-2 h4:hover {
+    transition-property: all;
+    transition-duration: 0.25s;
+    color: var(--main-bg-color);
+}
+
+.nav-part-2 h4 {
+    margin-right: 2vw;
+}
+
+.nav-part-2 img {
+    display: none;
+    font-weight: 800;
+}
+
+.nav h2 {
+    font-size: 2vw;
+}
+
+.nav-part-2 button {
+    /*Sign in button*/
+    padding: 0.8vw 2vw;
+    font-size: 1.5vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    background-color: rgb(238, 50, 50);
+    color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.nav-part-2 button:hover {
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 1px 5px black;
+    background-color: rgb(255, 71, 71);
+}
+
+.content { /*content left and right*/
+    height: calc(100% - 50px);
+    width: 100%;
+    display: flex;
+    background-image: url(https://cdn.chrome-backgrounds.com/anime/image19.jpg);
+    /* background-color: aqua; */
+}
+
+.content ::selection {
+    color: var(--main-bg-color);
+    background-color: black;
+}
+
+.left {
+    height: calc(100% - 200px);
+    width: 55%;
+    /* background-color: chocolate; */
+    padding: 6vw 5vw;
+}
+
+.left h1 { /*heading*/
+    font-size: 3.5vw;
+    line-height: 4.3vw;
+}
+
+.left span {
+    color: var(--main-bg-color);
+}
+
+.left p {
+    font-size: 1.2vw;
+    color: #666;
+    font-weight: 600;
+    width: 80%;
+    margin-top: 3vw;
+    font-family: var(--font2);
+    margin-bottom: 4vw;
+
+}
+
+.right {
+    height: calc(100% - 200px);
+    width: 45%;
+    padding: 6vw 5vw;  
+    /* background-color: royalblue; */
+}
+
+.left button {
+    padding: 1vw 2vw;
+    font-size: 2vw;
+    font-weight: 600;
+    background-color: var(--main-bg-color);
+    /* color: #dadadd; */
+    color: white;
+    border: 3px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    /* transition-duration:2s ; */
+    /* box-shadow: 2px 5px 5px solid; */
+}
+
+.left button:hover {
+    transition-duration: 0.25s;
+    box-shadow: 0px 2px 4px black;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+    background-color: rgb(251, 46, 46);
+}
+
+@media screen and (max-width:600px) {
+
+    /* CSS rules for devices with a width of 600px or less go here */
+    .nav {
+        /* background-color: aqua; */
+        height: 70px;
+        padding: 0 1vw;
+    }
+
+    /* 
+    .logo{
+        font-size: 3vw;
+        align-items: center;
+    } */
+
+    .nav-part-2 h4 {
+        display: none;
+    }
+
+    .nav-part-2 img {
+        display: block;
+        height: 7.8vw;
+        margin-right: 6vw;
+    }
+
+    .content {
+        font-size: 3vw;
+    }
+
+    .content left {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content p {
+        font-size: 2vw;
+    }
+
+    .nav button {
+        display: none;
+    }
+
+    .logo img {
+        /*logo*/
+        height: 15vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        height: 100%;
+        width: 90%;
+        /* background-image: url(https://fancyodds.com/wp-content/uploads/2021/12/Tokyo-Ghoul-Wallpaper-Live-For-Android-Phone-Iphone-2.jpg); */
+        /* overflow: hidden; */
+        /* background-color: cadetblue; */
+    }
+
+    .left h1 {
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+
+    .left p {
+        font-size: 3.7vw;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+    }
+
+    .right {
+        display: none;
+        background-color: crimson
+    }
+
+    .left button {
+        padding: 3vw 6vw;
+        font-size: 4vw;
+        /* font-weight: 600; */
+    }
+}

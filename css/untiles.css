@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lilita+One&family=Maven+Pro:wght@500&family=Signika+Negative:wght@500&family=Ubuntu:wght@500&display=swap');
+
+  :root {
+    --main-bg-color:rgb(241, 32, 32);
+       --font1: 'Lilita One', cursive;
+      --font2: 'Maven Pro', sans-serif;
+      --font3: 'Signika Negative', sans-serif;
+      --font4: 'Ubuntu', sans-serif;
+      --font5: 'Fjalla One', sans-serif;
+  }
