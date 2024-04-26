@@ -81,7 +81,7 @@ body {
     background-color: rgb(238, 50, 50);
     color: white;
     border: 3px solid black;
-    border-radius: 20px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
@@ -89,7 +89,7 @@ body {
     transition-property: all;
     transition-duration: 0.25s;
     transition-timing-function: ease-in-out;
-    box-shadow: 0px 1px 5px black;
+    box-shadow: 0px 1px 2px -1px black;
     background-color: rgb(255, 71, 71);
 }
 
@@ -148,7 +148,7 @@ body {
     /* color: #dadadd; */
     color: white;
     border: 3px solid black;
-    border-radius: 20px;
+    border-radius: 7px;
     cursor: pointer;
     /* transition-duration:2s ; */
     /* box-shadow: 2px 5px 5px solid; */
@@ -156,7 +156,7 @@ body {
 
 .left button:hover {
     transition-duration: 0.25s;
-    box-shadow: 0px 2px 4px black;
+    box-shadow: 0px 1px 2px -1px black;
     transition-property: all;
     transition-timing-function: ease-in-out;
     background-color: rgb(251, 46, 46);
