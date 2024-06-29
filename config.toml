@@ -1,4 +1,4 @@
-base_url = "https://test.mukundis.me/"
+base_url = "https://blog.mukundis.me/"
 title = "Blog"
 description = "For Rss Feed"
 compile_sass = false
