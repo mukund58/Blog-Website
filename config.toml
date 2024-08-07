@@ -3,7 +3,7 @@ title = "Blog"
 description = "For Rss Feed"
 compile_sass = false
 minify_html = true
-generate_feed = true
+generate_feeds = true
 default_language = "en"
 
 taxonomies = [
