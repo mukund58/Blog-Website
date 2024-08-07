@@ -11,9 +11,7 @@
   {% endif %}
   <div>
     
-      <a target="_blank" rel="noopener noreferrer"  herf="https://blog.mukundis.me/atom.xml">Subscribe Via RSS Feed</a>
-       
-    </p>
+      <a target="_blank" rel="noopener noreferrer"   href="{{ get_url(path="atom.xml", trailing_slash=false) }}" >Subscribe Via RSS Feed</a>
 
   </div>
   {% if config.generate_feed %}
