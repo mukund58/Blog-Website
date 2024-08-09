@@ -3,7 +3,7 @@ title = "Relational Algebra"
 [extra]
   toc = true
 
-+++
+
 ### Fundamental Operator
 1. Select (σ)
 2. Project (π)
@@ -164,3 +164,4 @@ Returns all rows when there is a match in either left or right table.
 
 
 - {{ webring(prev="../", webring="#", webringName="Go Top ", next="#") }}
++++
