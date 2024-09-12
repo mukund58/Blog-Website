@@ -1,5 +1,5 @@
 +++
-title = "How GDB is Game Chnager when write code ?"
+title = "How to debug Your code"
 [extra]
   toc = true
 +++
