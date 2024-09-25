@@ -11,12 +11,17 @@ Welcome to my blog website. I primarily use this site to blog about GNU and Linu
 
 Explore our insightful blog posts on a variety of topics:
 
+[Linux]
 - ☘️  [Why we have to use free software ?](./blog/why-free-software-is-good)
+- 👾  [Neovim From Scratch](./blog/how-to-config-neovim)
+- 🐛  [Debug with GDB](./blog/gdb-debugger)
+
+[Technology]
+
 - 📊  [Getting Start with SQLite](./blog/introduction-to-database-with-sql)
 - 🗃  [Create Your Own Databse](./blog/creating-our-own-database)
 - 🖇️  [Relational Algebra](./blog/relational-algebra/)
-- 👾  [Neovim From Scratch](./blog/how-to-config-neovim)
-- 🐛  [Debug with GDB](./blog/gdb-debugger)
+
 
 ## Online Presence
 
