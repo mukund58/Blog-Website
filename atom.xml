@@ -1,0 +1,1455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Blog</title>
+    <subtitle>For Rss Feed</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.mukund.xyz/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.mukund.xyz"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-13T00:00:00+00:00</updated>
+    <id>https://blog.mukund.xyz/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Configure neovim from Scratch</title>
+        <published>2024-09-13T00:00:00+00:00</published>
+        <updated>2024-09-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.mukund.xyz/blog/how-to-config-neovim/"/>
+        <id>https://blog.mukund.xyz/blog/how-to-config-neovim/</id>
+        
+        <content type="html" xml:base="https://blog.mukund.xyz/blog/how-to-config-neovim/">&lt;h4 id=&quot;how-to-install&quot;&gt;How to install&lt;&#x2F;h4&gt;
+&lt;p&gt;To install simply just type&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;sudo pacman -S neovim
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now make a directory in .config&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;mkdir ~&#x2F;.config&#x2F;nvim
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then go to that directory and open nvim&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;cd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;~&#x2F;.config&#x2F;nvim
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;nvim .
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here this type of interface popup&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhlEccoDEj5CZgXVd6CiweqhVczEQRHgki0We_MffmX2BqDx3B5HnaY0dc6Sjgg8UhUmgDqDSGvXY-2BFVDqHv_qf5ZoDLFaICZGwVfN4EMGUiRIQGon5F2VIoo2DNEs2RfyTKr14gLWaSYFUSR7RdvoLBhoJZ-GHK56EEyCqxkPzU1iuIBjqQNU-MZMfqj&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1743-56.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;h4 id=&quot;how-to-configure&quot;&gt;How to configure&lt;&#x2F;h4&gt;
+&lt;p&gt;Now press &lt;code&gt;:&lt;&#x2F;code&gt; and type&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;:h rtp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here you can see &lt;code&gt;default $XDG_CONFIG_HOME&#x2F;nvim&lt;&#x2F;code&gt; is our main directory where we put all our config files.
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgxIXHocnkLhtvxZN4rIk7xEVAH1fjw809GNTUtNZZ3TzGUT0f1M3OXuUCDi2658gGYym7XHirlKi2ZCjdO4AIN80Fl7Mp985hdHtjlLXtw0qKMSzVNngVe2gs2iQY_Ln3JQWQzRwL05Ja_Se7L-J4mwMx4eh32LBsVaBlfvyw0Pvva25TNJQdWshF0Ym55&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1748-25.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Now exit from that your interface should look like this&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhSAZcEnzH-SOXjVUgO_v2YnV2Dyw85kIKMAJp6iVlgJHk1rkfqtybFvjD2MgTh9o0HiQLGgiJ_ycv7MRV2G9i4ChN2ksg-_qEfdTyMk-xsWboqPaPLLyc-gtedBURYFw7S9jpZtfknIPT1J0k5TEQs3EvW666VX34ERuegZp1kKMZ-XXbyIpxV41HabjNZ&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1743-56.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Now press % and give file name &lt;code&gt;init.lua&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhBh7cr8aFVY-ds0dN_xYKfcNph1WL-UM5aY7ESQaqsCbUQ_ZDiH5-djUKqEt_izHkHnmjnPOdw1k2xvR1PhiWhwFkzvwxw3sinknaf5z3XYqCmFskUD-IdLh_F9ltbk7j8c_DQyi08Y822w-FPwpQ_mb_fluP4t9RW8Bmk2Qgx7bTW8bTm-plN11bdqlCb&amp;#x2F;s501&amp;#x2F;pic-selected-240913-1812-12.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;To type something press &lt;code&gt;i&lt;&#x2F;code&gt; (insert) or &lt;code&gt;a&lt;&#x2F;code&gt;(append)
+type this
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhaQ98ctWxLs-7I6zb9ZJge3X8_qn9f4rlyiQ-7KlwDW8u7DruJ5YtXDisDVBWh_nkzteZQpmrARbSlqwFEFop5SBlB4mewx1U03kNvEFyn9I2TnpT6ams3qdqSJKw923wByoOCPxWJ6qW_oqzKTn30LErGIaXfzSgpXF9bSAkPN-RuOXa8e1YXUFOmSbgT&amp;#x2F;s368&amp;#x2F;pic-selected-240913-1815-40.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;now exit from insert mode by pressing &lt;code&gt;Esc&lt;&#x2F;code&gt; or &lt;code&gt;ctrl + c&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After to save this file press &lt;code&gt;:&lt;&#x2F;code&gt; and type &lt;code&gt;w&lt;&#x2F;code&gt;(write) or &lt;code&gt;wq&lt;&#x2F;code&gt;(write and quiet)&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEjpdOezSW67-NQy0aDlGu0Kwjbd8syUv59SArftXhIdej2_8t9F6j_ZAcQYZSV1jmwDHaHvz4j_oNmsFtSrwQgr5rbUQJZtGVkQKuWcoDw4YQkwBF0A2WMaLRD4gN7ELO0eyX8qB6UqcF4iXwebBCuw8dmGTx7BTj2vWki6rsZOjnp3W_GzpYHOnsYh4yP4&amp;#x2F;s421&amp;#x2F;pic-selected-240913-1823-04.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Again go to nvim&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;nvim .
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here you can notice that our file is created and bottom left you can see hello.&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEjMB3Opt0bRBdhmPvygfl9gno_5qNKMYS0L9e2L1xZ7bypb06yaCcNM7jYwnrRCL5R-XhnV9nCMRXtgjuSSLQAZGAwjc342wyQKptP02zPURy90YhXAFDL8Kt5YPhWuS1wTQ_LPNrruEtf50tki2t0fUde7R4YXn2Suf_UzA-4m-4F76od5_Ms9qWu2TpLM&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1833-48.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Now press &lt;code&gt;d&lt;&#x2F;code&gt; to create directory and give name &lt;code&gt;lua&lt;&#x2F;code&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi8NXHzCnitR7Xo4yNijWhiskByVxuySeYQefEIMfgtcAE_Xw9RrsUW4fXPHYWo8kyDoAv6EO2_skts5Tp8ZW-SuyfynQr-mqYU1-Ptk-X6CSoSHJNl2I5i5FNoxPKYQ9rrRhWAyQ-uA5exKwZiJvl0rs5w3YhoE-I1VKG6ECR2EhzYX80D39zVEIwbIzT6&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1844-33.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Go to lua directory and create a whatever named directory
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiJ7bK9EGUlpO1Dco4fQgqA4Xdt-6v_hGy1GAlPHNGz66hSlsVycc-TSvM7FLa4pGIktsm3_-af8u6HnrR5YrH84_MPZvp7Y7NFKfgzfqEMZBg6HtBlnH2MPejwMn79jdBoP-OFTOFn-t806JABVJYnDjFTLbd2oXIw1kVgKeKKnQfrDtCsz4PbVtqyZeXt&amp;#x2F;s1364&amp;#x2F;pic-window-240913-1911-55.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;And go to that directory and create file &lt;code&gt;init.lua&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;for testing type this in your file:&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiyM5KXuvn-gep8cjwaEVplNJQlLORxU02KLEZ_Z_4vjFtsKsgjPp_fnlvJYDHRcrVkBv07YJmkBA0L_PcdSsySEw4l8i0lHyTZ431SHcQ7-YN0ciWIq5ZZbboR6A-_axsPJh11OXWKTpkBvlf8I6zLzn-pDlN1bVxbgIV2_RQ2KU_8pr9a-kcjRdssrO7W&amp;#x2F;s421&amp;#x2F;pic-selected-240913-1924-20.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Again press &lt;code&gt;:&lt;&#x2F;code&gt; to go explore mode &lt;code&gt;Ex&lt;&#x2F;code&gt;
+and go to previous directory &lt;code&gt;..&#x2F;&lt;&#x2F;code&gt;  where our first file created&lt;&#x2F;p&gt;
+&lt;p&gt;open that file &lt;code&gt;~&#x2F;.config&#x2F;nvim&#x2F;init.lua&lt;&#x2F;code&gt; and type this&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiT6b3sAVAiFr1U1ppFdb-bByHxALCEixxo3sBAMnEcAW4SJoOgChureVhKI9cAOE4hdhrWbgiC5xIqG1mguQRwYt73-NLjELafCnbrnj6cwsuau2QNjlG6HfLFCUeJy7ehN8BSHinkkUgmUy0LTEdAY1XxD73IKWOTeStmkPPrtPltedD-9M_HZ-qImK7J&amp;#x2F;s437&amp;#x2F;pic-selected-240913-2120-00.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;now exit from nvim by pressing &lt;code&gt;:wq&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Again open nvim&lt;&#x2F;p&gt;
+&lt;p&gt;pwd :- ~&#x2F;.config&#x2F;nvim&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;nvim .
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;A message like this will show when you open nvim&lt;&#x2F;p&gt;
+&lt;p&gt;congrats if this type of  message will shows so you go further and lets make nvim usable.
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhYrqlA4oWINyvo_eBhS9rQhy0Hyxje-okrf72B1grUz9KcNLu-OHtkUEa6reFmY5QtY3PadNvt-8rX_fq9lxQjxBB8l9IA04sapSjgAZvvPigHQBX_vYbEsDl_Cy3MjOjgyCiiUEeCmJnxrTqGfDOCuBdy3JkTTBr4IuFnGEMpNRJvfpLIearaiJKDPxB-&amp;#x2F;s566&amp;#x2F;pic-selected-240913-2125-02.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;creating-some-shortcuts&quot;&gt;Creating some shortcuts&lt;&#x2F;h4&gt;
+&lt;p&gt;Now lets make some shortcuts
+first you have to create a remap.lua file in
+~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;remap.lua&lt;&#x2F;p&gt;
+&lt;p&gt;here &lt;code&gt;vim.g.leader&lt;&#x2F;code&gt; is name where you can assign a keybutton&lt;&#x2F;p&gt;
+&lt;p&gt;in second line you can see &lt;code&gt;vim.keymap.set&lt;&#x2F;code&gt; is used for set keyboard shortcuts of vim command&lt;&#x2F;p&gt;
+&lt;p&gt;here we can directly execute this command  &lt;code&gt;Ex&lt;&#x2F;code&gt; by &lt;code&gt;spacebar pv&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgkIWoYFI1FDCInDmElLLTNXJg5RMNWMcl9lr5fyd2hkMuc9JgP455kQ5o-vDAfumfGmkp6vkN4lsOAYMPJUOOnVJmLUCGc2rVNvS30WZggCV56L1XGMgLT_tBNO7of3YWbSKnTIGPkNhxcs3CVUEcaXtzVmso30lxwH2nSVH_u72Wz5wyiLg6HeyBQMNKe&amp;#x2F;s722&amp;#x2F;pic-selected-240913-2136-46.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;save this file &lt;code&gt;:w&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;after press &lt;code&gt;:so&lt;&#x2F;code&gt; hit Enter (it will complie the source)
+now you can press &lt;code&gt;spacebar pv&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;here when you exit from nvim you have to complie again
+so to solve this problem
+we have to type this in our init.lua&lt;&#x2F;p&gt;
+&lt;p&gt;pwd:- ~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;init.lua&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgUOFsyOZKl6t6RgG0Husli4wsPs3SQ-x0RuOLF8usuHSbk-5qqaL1Lgjv5VsCPvSihfZK8op-EHFw2YdaZBkiE0ITJXQRCCPzA80pNNQn1iGaxKbFtLQ6xVVDLg4hkj_Vyz2mHRbQsDMv2v3IUxJaMQYwwrd1lbkj5JBGQTDlyrH4ks-1I-bGXP8RMUoRa&amp;#x2F;s722&amp;#x2F;pic-selected-240913-2204-18.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Now you everytime you open your nvim it will compile automatically&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;add-pulgin-manger-packer&quot;&gt;Add pulgin-manger(packer)&lt;&#x2F;h4&gt;
+&lt;p&gt;Go to this repo &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wbthomason&#x2F;packer.nvim&quot;&gt;packer.nvim&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;clone this repo in your ~&#x2F;.config&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;git clone --depth 1 https:&#x2F;&#x2F;github.com&#x2F;wbthomason&#x2F;packer.nvim\
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt; ~&#x2F;.local&#x2F;share&#x2F;nvim&#x2F;site&#x2F;pack&#x2F;packer&#x2F;start&#x2F;packer.nvim
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now copy this from that repo&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;cmd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;[[packadd packer.nvim]]
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;require&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;packer&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;startup(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(use)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Packer can manage itself
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;wbthomason&#x2F;packer.nvim&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;paste it in
+~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;packer.lua&lt;&#x2F;p&gt;
+&lt;p&gt;now complie it &lt;code&gt;:so&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;now can able to type this &lt;code&gt;:PackerSync&lt;&#x2F;code&gt;
+it will look like this&lt;&#x2F;p&gt;
+&lt;p&gt;if the option is not available you  can restart your nvim and recomplie it .&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgh375U-HZtX-coZhrI3CWI-Js40-XB3U4NZs98O2rFTKdEcesOj7uu1o3U5vWleZgWs5M5ElorMuVQYJ-PeLND3yImfUfsnZ9ODEz0gQQRHHO6DTQiN7UcZTCxWtAlcjQBuxXHr0O6P4XXVoQZHRxeiGAXnchpmbhA9l7Bn2U4vHo465XCjjJzfrYp19pO&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2238-51.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;congrats you come this far you have succesfully installed pulgin-manger.&lt;&#x2F;p&gt;
+&lt;h5 id=&quot;add-pulgin-fuzzy-finder&quot;&gt;Add Pulgin(fuzzy finder)&lt;&#x2F;h5&gt;
+&lt;p&gt;Now lets add some pulgin&lt;&#x2F;p&gt;
+&lt;p&gt;go to repo &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nvim-telescope&#x2F;telescope.nvim&quot;&gt;telescope.nvim&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;copy this from that repo&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;use {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;nvim-telescope&#x2F;telescope.nvim&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;tag &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;0.1.8&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- or                            , branch = &amp;#39;0.1.x&amp;#39;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;requires &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= { {&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;nvim-lua&#x2F;plenary.nvim&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;} }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;paste in your packer.lua
+it should be look like this
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEiYndla32ASmdYaPT8Hei_O37y4CWg60XD-Iq3T3e_-_6NYKpYTqsh2pc8YN7wc_XG7dgKnQ_iX6y5EkBxmHAn2KM-cpeKE31BElAb0P1hxtYo3_kO1lkUOGrU8doI3ozwy7tIHtSzmK2kLpkpgj0EKQG2zFnfMS_gnkhVQE6Mog12IdVM-SclNdXx5ndvl&amp;#x2F;s617&amp;#x2F;pic-selected-240913-2258-47.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Now press &lt;code&gt;:w&lt;&#x2F;code&gt;, &lt;code&gt;:so&lt;&#x2F;code&gt; and after that &lt;code&gt;:PackerSync&lt;&#x2F;code&gt;
+it will start to install that pulgin&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEihJpdFhxgTfc0yMf4doskm_O3ow39JywjDig4GljqgfXrRcFOHouxfLts4TNX3t-pki0FbA-_miGjCY7XfuMsNISkFvd7SQSvo2O3o8K01vz3X470k64m3HUj_Lleity-hWBDM1kPhyphenhyphenZ_N-AHWhr4vbPQYOtOSnri4iWxUz9nlOBqgT_q44Zkgg7X7OpPm&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2302-39.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Now copy this line
+paste it in  ~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;pulgin&#x2F;telescope.lua
+here create respective directory&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;local &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;builtin &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;require&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;telescope.builtin&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;n&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;&amp;lt;leader&amp;gt;pf&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, builtin.find_files, {})
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;n&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;C-p&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, builtin.git_files, {})
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;n&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;&amp;lt;leader&amp;gt;ps&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;()
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;	builtin.grep_string({ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;search &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= vim.fn.input(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Grep &amp;gt; &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)});
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now press &lt;code&gt;:w&lt;&#x2F;code&gt; &lt;code&gt;:so&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;now you can use fuzzy finder
+press &lt;code&gt;spacebar pf or ps&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgZmYnHq8oVAFiA4PIhNFusfq1XP2EeWEdXAJSHLkrjEK8-mLU2SpM1N0_-UCAhCXVSG-WfhibauYrrn-fxgxQY48WxW-qyeW8YMJ2nP6qh3Eha6TX1oHmPjt69pL-GLpaXNwVtUZfZyFsnN4N3kS8dMt8iWcG4-rEcrh8yvvmWSQTzHeumTqpIxlfxug0-&amp;#x2F;s1364&amp;#x2F;pic-window-240913-2355-48.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;h5 id=&quot;add-pulgin-rose-pine&quot;&gt;Add pulgin (Rosé Pine)&lt;&#x2F;h5&gt;
+&lt;p&gt;Now go to this repo &lt;a rel=&quot;noopener&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;will&#x2F;rose-pine-neovim&quot;&gt;Rosé Pine&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;copy this line
+paste it in ~&#x2F;.config&#x2F;nvim&#x2F;lua&#x2F;soul&#x2F;packer.lua&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;use({ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;rose-pine&#x2F;neovim&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;as &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;rose-pine&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;})
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;cmd(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;colorscheme rose-pine&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can change it colorschema &lt;code&gt;:coloschema rose-pine-main&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgejqL4HwbMUBTGYfUMEqH5z7FfGzzfszcrfdyqJb4bnlt9XjdX11z7LfPIifCg7zudPcvF9GifS0E35o1uCSVJxFuO_HjUWNO96nWBr2Xn4q2oGoo9fyDrEqGdEaG5A2wkZ2MSwDKSGru7mmB2FRPhQtrkqrIybQAuHhfQYdqCRFf7vXUGCCiCrU7z-Nth&amp;#x2F;s1364&amp;#x2F;pic-window-240914-0003-57.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;h4 id=&quot;transparent-background&quot;&gt;Transparent Background&lt;&#x2F;h4&gt;
+&lt;p&gt;here i want traspraent background&lt;&#x2F;p&gt;
+&lt;p&gt;create a file colors.lua
+at ~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;pulgin&#x2F;colors.lua&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;ColorMyPencils&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;color&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;color &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;color &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;or &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rose-pine&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.cmd.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;colorscheme(color)
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.api.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;nvim_set_hl(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;Normal&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;bg &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;none&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;})
+&lt;&#x2F;span&gt;&lt;span&gt;            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.api.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;nvim_set_hl(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;NormalFloat&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;bg &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;none&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;})
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ColorMyPencils()
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After transparenting  background .
+it will look beautiful &lt;code&gt;&amp;gt;&amp;lt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEhOsNuiNiR_5Veu1EeTXOMG7VpQyxUUZS2QHeTzo24faCL6KEfAyjYuKglYez31zHjxtAh_n13I9cKNDOnFJQLGK5bmQVe_VAa6vYorLG4eCpRhxYmUIy7CEWH54yZLw9RzQG2ceSDzFnHS1WnaqMkeJTrGUEpqFDuTYPyL4LNC97rM-WlDsM47w8wD5yyF&amp;#x2F;s1365&amp;#x2F;pic-selected-240914-1406-41.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;&lt;h4 id=&quot;add-tree-sitter&quot;&gt;Add tree sitter&lt;&#x2F;h4&gt;
+&lt;p&gt;Add this line in your packer.lua&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;use( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;nvim-treesitter&#x2F;nvim-treesitter&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;run &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;:TSUpdate&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;})
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;&#x2F;code&gt; and comple it &lt;code&gt;:so&lt;&#x2F;code&gt; and run Packer &lt;code&gt;:PackerSync&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;copy this line and paste it in
+~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;pulgin&#x2F;tree-sitter.lua&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;require&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;nvim-treesitter.configs&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;setup {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- A list of parser names, or &amp;quot;all&amp;quot; (the listed parsers MUST always be installed)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;ensure_installed &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= { &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;c&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;lua&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;vim&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;vimdoc&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;query&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;markdown&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;markdown_inline&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;javascript&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rust&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;typescript&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;},
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Install parsers synchronously (only applied to `ensure_installed`)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;sync_install &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Automatically install missing parsers when entering buffer
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Recommendation: set to false if you don&amp;#39;t have `tree-sitter` CLI installed locally
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;auto_install &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;highlight &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;enable &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;true&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Setting this to true will run `:h syntax` and tree-sitter at the same time.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Set this to `true` if you depend on &amp;#39;syntax&amp;#39; being enabled (like for indentation).
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Using this option may slow down your editor, and you may see some duplicate highlights.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;-- Instead of true it can also be a list of languages
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;additional_vim_regex_highlighting &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;false&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;  },
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;&#x2F;code&gt; and comple it &lt;code&gt;:so&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Add this line in your packer.lua&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;use( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;nvim-treesitter&#x2F;playground&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Save the file &lt;code&gt;:w&lt;&#x2F;code&gt; and comple it &lt;code&gt;:so&lt;&#x2F;code&gt; and run packer &lt;code&gt;PackerSync&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;you can able to run &lt;code&gt;:TSPlaygroundToggle&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;add-harrpon&quot;&gt;Add harrpon&lt;&#x2F;h4&gt;
+&lt;p&gt;Add this line in you Packer&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;use( &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;ThePrimeagen&#x2F;harpoon&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;same as above&lt;&#x2F;p&gt;
+&lt;p&gt;Now create a file harpoon.lua
+at ~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;harpoon.lua
+paste this&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;local &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;mark &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;require&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;harpoon.mark&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;local &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;ui &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;require&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;harpoon.ui&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&amp;lt;leader&amp;gt;a&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, mark.add_file)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&amp;lt;leader&amp;gt;as&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, ui.toggle_quick_menu)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&amp;lt;C-a&amp;gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;() ui.nav_file(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&amp;lt;C-s&amp;gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;() ui.nav_file(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&amp;lt;C-u&amp;gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;() ui.nav_file(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;n&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;&amp;lt;C-i&amp;gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;function &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;() ui.nav_file(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;end&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;and save it and complie it
+Now can switch one file to another very fast&lt;&#x2F;p&gt;
+&lt;p&gt;Here How ?&lt;&#x2F;p&gt;
+&lt;p&gt;when i press &lt;code&gt;spacebar a&lt;&#x2F;code&gt; means to add  file in nav
+now press &lt;code&gt;spacebar pf&lt;&#x2F;code&gt; serach file you want to access and go to that file and&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEgcP_RVinVABBKu0SGZlujBo_Q23zkXH8HVQDQ2OKUDblsV4wnF12o3twD_BeGHrUTx3lBY5FNTwVIGn5vndjd68MY7NX3D3llE8bLmHwn52PyMJAWP9M-qiLBm873TiwvL5T4E-jdIa2G-cv7M_wNgQv7WZ3_RQn89nemPZVgMTCXj_byvkmyW1kwTLt5F&amp;#x2F;s1366&amp;#x2F;pic-window-240914-1648-01.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;press &lt;code&gt;spacebar a&lt;&#x2F;code&gt; now press &lt;code&gt;spacebar as&lt;&#x2F;code&gt; now and see two file that you selected&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEi2xPB2PCKSyBSns_7B_oul-uwHJ47D7RgN2RW-mqKCFVs6aAOt6pMzLqjJ0qpPZH3qPpsHwb00YSCBtV5yoN0Q1MXr2Xsah0EidZBbXJnB-Ulls-D1VQms6yI5Y7e4FUorI8nLiJ6yjk07nwE9dQQFcnRz2i45d8fsFMszRdUy-hGv4nUjcDi6nJrp24Sp&amp;#x2F;s1363&amp;#x2F;pic-selected-240914-1652-13.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;now you can switch using &lt;code&gt;Ctrl + a&lt;&#x2F;code&gt; and &lt;code&gt;Ctrl + s&lt;&#x2F;code&gt; and thats very quick&lt;&#x2F;p&gt;
+&lt;p&gt;or you can use &lt;code&gt;spacebar as&lt;&#x2F;code&gt; to switch&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;add-undotree&quot;&gt;Add undotree&lt;&#x2F;h4&gt;
+&lt;p&gt;add this line in your packer&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;use (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;mbbill&#x2F;undotree&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;then save it and complie it&lt;&#x2F;p&gt;
+&lt;p&gt;now create a file undotree.lua
+~&#x2F;.config&#x2F;nvim&#x2F;after&#x2F;plugin&#x2F;undotree.lua&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;lua&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-lua &quot;&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;vim&lt;&#x2F;span&gt;&lt;span&gt;.keymap.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;set(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;n&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;&amp;lt;leader&amp;gt;u&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;, vim.cmd.UndotreeToggle)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;save this file and complie it&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;conclusion&quot;&gt;Conclusion&lt;&#x2F;h4&gt;
+&lt;p&gt;Hope this helps you to understand who things works
+I also want to add lsp but i still confuse how to configure so if i fully understand then i will update it.&lt;&#x2F;p&gt;
+&lt;p&gt;I try my best to make things simple
+see you in another blog :)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;webring&quot;&gt;
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronLeft&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt; 
+&lt;a href=#&gt;Go Top &lt;&#x2F;a&gt; 
+&lt;a class=&quot;no-style&quot; href=#&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronRight&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Creating our own Database</title>
+        <published>2024-07-27T00:00:00+00:00</published>
+        <updated>2024-07-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.mukund.xyz/blog/creating-our-own-database/"/>
+        <id>https://blog.mukund.xyz/blog/creating-our-own-database/</id>
+        
+        <content type="html" xml:base="https://blog.mukund.xyz/blog/creating-our-own-database/">&lt;h3 id=&quot;what-database-schema&quot;&gt;What Database Schema ?&lt;&#x2F;h3&gt;
+&lt;p&gt;Database schema defines how data is organized within a relational database; this is inclusive of logical constraints such as, table names, fields, data types and the relationships between these entities.&lt;&#x2F;p&gt;
+&lt;p&gt;Create database schema&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;$ vim schema.sql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;write in your schema file&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;CREATE TABLE &lt;&#x2F;span&gt;&lt;span&gt;IF NOT EXISTS &amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8ec07c;&quot;&gt;collection&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;(
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;INTEGER&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;TEXT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;NOT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;accesion_number&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;TEXT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;NOT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt; UNIQUE,
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;acquired&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;NUMERIC&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;PRIMARY KEY&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now create database&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;$ sqlite3 mfa.db
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Import schmea in our database&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;.read &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;schema&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;sql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To read what’s inside schmea file&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;.schema
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;So we are ready to to insert our data&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;inserting-data&quot;&gt;Inserting Data&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;INSERT INTO &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;accesion_number&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;acquired&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;VALUES&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;art of swordship&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;32.43&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;2024-28-09&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;You can see inserted data by&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|art of swordship|32.43|2024-28-09
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;export-as-csv&quot;&gt;Export as .csv&lt;&#x2F;h3&gt;
+&lt;p&gt;Change mode to csv&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;.mode csv
+&lt;&#x2F;span&gt;&lt;span&gt;.output &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;mfa&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;csv
+&lt;&#x2F;span&gt;&lt;span&gt;.header on 
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;.quit
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Headers: Use the &lt;code&gt;.header on&lt;&#x2F;code&gt; command before the query to include column names as the first row in the CSV file&lt;&#x2F;p&gt;
+&lt;p&gt;mfa.csv&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;id,title,accesion_number,acquired
+&lt;&#x2F;span&gt;&lt;span&gt;1,&amp;quot;art of swordship&amp;quot;,32.43,2024-28-09
+&lt;&#x2F;span&gt;&lt;span&gt;2,&amp;quot;art of fighting&amp;quot;,22.43,2024-28-02
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;import-as-csv&quot;&gt;Import as .csv&lt;&#x2F;h3&gt;
+&lt;p&gt;we hava mfa.csv&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;id,title,accesion_number,acquired
+&lt;&#x2F;span&gt;&lt;span&gt;3,&amp;quot;art doing hardwork&amp;quot;,892.43,2024-18-09
+&lt;&#x2F;span&gt;&lt;span&gt;4,&amp;quot;Life is always ok&amp;quot;,92.93,2024-29-0
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To import in our database&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;.import &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;--csv --skip 1 mfa.csv collection
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;code&gt;collection&lt;&#x2F;code&gt; is table name&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;--csv&lt;&#x2F;code&gt; is output formate&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;--skip 1&lt;&#x2F;code&gt; is for igonore first row&lt;&#x2F;p&gt;
+&lt;p&gt;To check you datbase is updated  you can use SELECT query&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;colllection&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;import-data-file-mfa-csv-without-id-value&quot;&gt;Import data file (mfa.csv) without id value&lt;&#x2F;h4&gt;
+&lt;p&gt;mfa.csv&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;title,accesion_number,acquired
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;art of swordship&amp;quot;,32.43,2024-28-09
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;art of fighting&amp;quot;,22.43,2024-28-02
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;art doing hardwork&amp;quot;,892.43,2024-18-09
+&lt;&#x2F;span&gt;&lt;span&gt;&amp;quot;Life is always ok&amp;quot;,92.93,2024-29-09
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To import in data file in database&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;.import &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#928374;&quot;&gt;--csv mfa.csv temp
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here we store in tempoary table after we will insert this data into collection table&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;INSERT INTO &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;accesion_number&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;acquired&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;accesion_number&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;acquired&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;temp&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now you can check&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|art of swordship|32.43|2024-28-09
+&lt;&#x2F;span&gt;&lt;span&gt;2|art of fighting|22.43|2024-28-02
+&lt;&#x2F;span&gt;&lt;span&gt;3|art doing hardwork|892.43|2024-18-09
+&lt;&#x2F;span&gt;&lt;span&gt;4|Life is always ok|92.93|2024-29-09
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;deleting-data&quot;&gt;Deleting Data&lt;&#x2F;h3&gt;
+&lt;p&gt;To delete all rows in table&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;DELETE FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To Delete at speific range&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;DELETE FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;it will delete all rows which is greater than 2&lt;&#x2F;p&gt;
+&lt;p&gt;To Delete Table&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;DROP TABLE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Consider now an updated schema for the MFA database, containing information not just about artwork but also artists. The two entities Artist and Collection have a many-to-many relationship—a painting can be created by many artists and a single artist can also create many pieces of artwork.&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;cs50.harvard.edu&amp;#x2F;sql&amp;#x2F;2024&amp;#x2F;notes&amp;#x2F;3&amp;#x2F;images&amp;#x2F;29.jpg&quot; alt=&quot;theme logo&quot;&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Here is a database implementing the above ER Diagram&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;cs50.harvard.edu&amp;#x2F;sql&amp;#x2F;2024&amp;#x2F;notes&amp;#x2F;3&amp;#x2F;images&amp;#x2F;30.jpg&quot; alt=&quot;theme logo&quot;&gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The &lt;code&gt;artists&lt;&#x2F;code&gt; and &lt;code&gt;collections&lt;&#x2F;code&gt; tables have primary keys.
+The created table references these IDs in its two foreign key columns.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;ON DELETE RESTRICT&lt;&#x2F;code&gt;: This restricts us from deleting IDs when the foreign key constraint is violated.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;ON DELETE NO ACTION&lt;&#x2F;code&gt;: This allows the deletion of IDs that are referenced by a foreign key and nothing happens.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;ON DELETE SET NULL&lt;&#x2F;code&gt;: This allows the deletion of IDs that are referenced by a foreign key and sets the foreign key references to NULL.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;ON DELETE SET DEFAULT&lt;&#x2F;code&gt;: This does the same as the previous, but allows us to set a default value instead of NULL.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;ON DELETE CASCADE&lt;&#x2F;code&gt;: This allows the deletion of IDs that are referenced by a foreign key and also proceeds to cascadingly delete the referencing foreign key rows. For example, if we used this to delete an artist ID, all the artist’s affiliations with the artwork would also be deleted from the created table.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;updating-data&quot;&gt;Updating Data&lt;&#x2F;h3&gt;
+&lt;p&gt;Here is the syntax of the update command.
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;cs50.harvard.edu&amp;#x2F;sql&amp;#x2F;2024&amp;#x2F;notes&amp;#x2F;3&amp;#x2F;images&amp;#x2F;49.jpg&quot; alt=&quot;theme logo&quot;&gt;
+  
+&lt;&#x2F;div&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There are two ways of writing query
+Let’s change this affiliation for “Profusion of flowers” in the created table using the above syntax.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;UPDATE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;created&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SET &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;artist_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;3&amp;#39; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;3&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;or&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;UPDATE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;created&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SET &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;artist_id&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; (
+&lt;&#x2F;span&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;artists&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;name&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;Qian Weicheng&amp;#39;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collection_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; (
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;collections&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;Profusion of flowers&amp;#39;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|2
+&lt;&#x2F;span&gt;&lt;span&gt;3|3
+&lt;&#x2F;span&gt;&lt;span&gt;3|1
+&lt;&#x2F;span&gt;&lt;span&gt;4|4
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ok lets meet  again on another blog 🆗&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Thank You for  reading to the end 🙂&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;span class=&quot;webring&quot;&gt;
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronLeft&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt; 
+&lt;a href=#&gt;Go Top &lt;&#x2F;a&gt; 
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;introduction-to-database-with-sql&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronRight&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How to debug Your code</title>
+        <published>2024-07-27T00:00:00+00:00</published>
+        <updated>2024-07-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.mukund.xyz/blog/gdb-debugger/"/>
+        <id>https://blog.mukund.xyz/blog/gdb-debugger/</id>
+        
+        <content type="html" xml:base="https://blog.mukund.xyz/blog/gdb-debugger/">&lt;p&gt;When your code is running but not working at that time we mostly check line by line code it cant find any clue.&lt;&#x2F;p&gt;
+&lt;p&gt;The best way to check your code line by line and what code acutally do internally, when you run the code.&lt;&#x2F;p&gt;
+&lt;p&gt;so anyway let’s start by installing GDB debugger in computer .&lt;&#x2F;p&gt;
+&lt;p&gt;To install on Ubuntu&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo apt install gdb
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To install on arch&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;sudo pacman -S gdb
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To download on Your Machine
+&lt;code&gt;https:&#x2F;&#x2F;sourceware.org&#x2F;gdb&#x2F;download&#x2F;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;You can also use it online &lt;code&gt;https:&#x2F;&#x2F;www.onlinegdb.com&#x2F;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;How to run GDB&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Your complier&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;$ g++ -g program
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Run Your gdb&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;$ gdb a.out
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;you will get output something like&lt;&#x2F;p&gt;
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEh1MRdJ05GegnQsLcDMAANqWMjfdqUodUt60DdytAogc20kgN_if3b5-E31D1XxdkA3HgeOcdHhebmnvLCdc4T-YZE9RuqhnMokxGt0adIE6cBU2W1MUbtXJ3Bh-5E1mM7z1LN1DlBH5gPYQZSquW5IFFd3v02gL3AWUmNw_DBnO4uTi1PFKazy2OXs4gpY&amp;#x2F;s1062&amp;#x2F;pic-selected-240910-1852-15.png&quot; alt=&quot;img&quot;&gt;
+  
+&lt;&#x2F;div&gt;
+&lt;p&gt;Start Your gdb with start command&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;start 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Now Press ctrl + x + a
+&lt;div &gt;
+  &lt;img src=&quot;https:&amp;#x2F;&amp;#x2F;blogger.googleusercontent.com&amp;#x2F;img&amp;#x2F;b&amp;#x2F;R29vZ2xl&amp;#x2F;AVvXsEh_YqCCDkmkV2jWyCSwwCsyjEtuNknGjtYEUhGAp5eqwQhgOHjDb3khwg1rzL9Jn4WNR5ljFoTYha4wzNl5tt4m8tn1T_1cG7CEyMOcD5pyOz-ZaUUkGBwXoD380GunlviJTw_loMAuQ2Z8jxNxuHp_Dpp-SmzouKJGmyaBFUFHq7bvNomCu6cucCZBSm19&amp;#x2F;s1366&amp;#x2F;pic-full-240910-1913-48.png&quot; &gt;
+  
+&lt;&#x2F;div&gt;
+Now for go to next line&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;next
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;it go two second line&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;next
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;if your ui is not lagging than press &lt;code&gt;ctrl + l&lt;&#x2F;code&gt; to refresh the ui&lt;&#x2F;p&gt;
+&lt;p&gt;To check store data in variable&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;print var_name
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;or&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;info locals
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To Go Function defination when debgger reach to that line&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;step 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To exit&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;exit
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Hope you get basic idea who to use this software&lt;&#x2F;p&gt;
+&lt;p&gt;I know that i did not teach everything ,so
+To know more You can refere any Documenation or cheatsheet&lt;&#x2F;p&gt;
+&lt;p&gt;If i get sometime than i may continue this blog to the end and I will teach everything&lt;&#x2F;p&gt;
+&lt;p&gt;Thank You For Your Time :)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;webring&quot;&gt;
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronLeft&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt; 
+&lt;a href=#&gt;Go Top &lt;&#x2F;a&gt; 
+&lt;a class=&quot;no-style&quot; href=#&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronRight&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Relational Algebra</title>
+        <published>2024-07-27T00:00:00+00:00</published>
+        <updated>2024-07-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.mukund.xyz/blog/relational-algebra/"/>
+        <id>https://blog.mukund.xyz/blog/relational-algebra/</id>
+        
+        <content type="html" xml:base="https://blog.mukund.xyz/blog/relational-algebra/">&lt;h3 id=&quot;fundamental-operator&quot;&gt;Fundamental Operator&lt;&#x2F;h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Select (σ)&lt;&#x2F;li&gt;
+&lt;li&gt;Project (π)&lt;&#x2F;li&gt;
+&lt;li&gt;Union (U)&lt;&#x2F;li&gt;
+&lt;li&gt;Set Difference (-)&lt;&#x2F;li&gt;
+&lt;li&gt;Cartesian Product (X)&lt;&#x2F;li&gt;
+&lt;li&gt;Rename (ρ)&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h4 id=&quot;select-s&quot;&gt;Select (σ)&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Select tuples that satisfy a given predicate.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It is denoted by lowercase Greek letter sigma (σ).&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;Syntax: σ&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span&gt;selection_condition&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt; (Relation).
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Example: σD_ID = 2 (Employee).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Comparison operators: =, #, &amp;lt;, ≤, &amp;gt;, and ≥.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Connectives: AND (^), OR (v) and NOT (-).&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;project-p&quot;&gt;Project (π)&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Projects a relation to include only specified attributes.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;Syntax: π_attribute1, attribute2, ...(R)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It is a unary operator.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Basically a relation is a set.&lt;&#x2F;p&gt;
+&lt;p&gt;Example: π_name, age(Employees) selects only the name and age columns from the Employees relation.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;union-u&quot;&gt;Union (U)&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Any relation is a set.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Similar to union operation in Set Theory.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It is a binary operator.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It is a set of all objects that are a member of A, or B, or both&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Like project, the duplicate rows are eliminated.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; Syntax: π Column (Relation_1) U π Column (Relation_2)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Two important conditions For R US to be valid,&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;ol&gt;
+&lt;li&gt;R and S must be of same arity.(no of R colums = no of S colums )&lt;&#x2F;li&gt;
+&lt;li&gt;For all i,Domain of the ith attribute of R = Domain of ith attribute of S.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;Example - University Database&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;```
+&lt;&#x2F;span&gt;&lt;span&gt;Instructor (ID, Name, Dept_Name, Salary)
+&lt;&#x2F;span&gt;&lt;span&gt;Course (Course_ID, Title, Dept_Name, Credits)
+&lt;&#x2F;span&gt;&lt;span&gt;Department (Dept-Name, Building, Budget)
+&lt;&#x2F;span&gt;&lt;span&gt;Section (Course_ID, Sec_ID, Semester, Year, Building, Room_No, Time_slot_ID)
+&lt;&#x2F;span&gt;&lt;span&gt;Teaches (ID, Course_ID, Sec_ID, Semester, Year)
+&lt;&#x2F;span&gt;&lt;span&gt;Student (ID, Name, Dept_Name, Tot_Cred)
+&lt;&#x2F;span&gt;&lt;span&gt;Advisor (S_ID, I_ID)
+&lt;&#x2F;span&gt;&lt;span&gt;Takes (ID, Course_ID, Sec_ID, Semester, Year, Grade)
+&lt;&#x2F;span&gt;&lt;span&gt;Classroom (Building, Room Number, Capacity)
+&lt;&#x2F;span&gt;&lt;span&gt;Time Slot (Time Slot_ID, Day, Start-Time, End-Time)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;```
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h4 id=&quot;set-difference&quot;&gt;Set Difference (-)&lt;&#x2F;h4&gt;
+&lt;ul&gt;
+&lt;li&gt;It is like the same set difference in Set Theory.&lt;&#x2F;li&gt;
+&lt;li&gt;It is a binary operation.&lt;&#x2F;li&gt;
+&lt;li&gt;To find tuples that are in one relation but are not in another.&lt;&#x2F;li&gt;
+&lt;li&gt;R - S = Tuples in R but not in S.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Two important conditions For R - S to be valid,&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;R and S must be of same arity.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;For all i,
+Domain of the ith attribute auf R = Domain of ith attribute of S.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h4 id=&quot;cartesian-product-x&quot;&gt;Cartesian Product (X)&lt;&#x2F;h4&gt;
+&lt;p&gt;Cartesian product associates every tuple of R, with every tuple
+of R2.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It is a binary operation.&lt;&#x2F;li&gt;
+&lt;li&gt;It is denoted by cross (X) symbol.&lt;&#x2F;li&gt;
+&lt;li&gt;R₁ X R₂ = All possible pairing.&lt;&#x2F;li&gt;
+&lt;li&gt;Same attribute may appear in R₁ and R₂.&lt;&#x2F;li&gt;
+&lt;li&gt;R = Depositor X Borrower.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;rename-r&quot;&gt;Rename (ρ)&lt;&#x2F;h4&gt;
+&lt;p&gt;Relations in the database have names.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The results of relational-algebra expressions do not have a name.&lt;&#x2F;li&gt;
+&lt;li&gt;It is useful to be able to give them names.&lt;&#x2F;li&gt;
+&lt;li&gt;It is a unary operation.&lt;&#x2F;li&gt;
+&lt;li&gt;It is denoted by the lowercase Greek letter rho (ρ).&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;Syntax:ρx (E)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;additional-operations&quot;&gt;Additional operations:&lt;&#x2F;h3&gt;
+&lt;h4 id=&quot;set-intersection&quot;&gt;Set Intersection (∩)&lt;&#x2F;h4&gt;
+&lt;p&gt;The intersection operation returns the set of all tuples that are present in both relations.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Any relation is a set.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Similar to intersection operation in Set Theory.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It is a binary operator.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;If R and S are two relations, then R ∩ S will give the tuples common to both R and S.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;R ∩ S = R - ( R - S )&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;Syntax: π column (Relation_1) ∩ π column (Relation_2)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Two important conditions For R ∩ S to be valid,&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;R and S must be of same arity.(no of R colums = no of S colums )&lt;&#x2F;li&gt;
+&lt;li&gt;For all i,Domain of the ith attribute of R = Domain of ith attribute of S.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h4 id=&quot;assignment-operation&quot;&gt;Assignment Operation (=)&lt;&#x2F;h4&gt;
+&lt;p&gt;The assignment operation allows storing the result of a relational algebra expression in a temporary relation variable.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;It is denoted by &lt;code&gt;(←)&lt;&#x2F;code&gt; or &lt;code&gt;(=)&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;It is binary operator.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;the databse is might be modified if assigment to a permanent relation is made.&lt;&#x2F;p&gt;
+&lt;p&gt;Example :&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;  R = S ∩ P
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt; temp ← R ⋈ S
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;natural-join&quot;&gt;Natural Join (⋈)&lt;&#x2F;h4&gt;
+&lt;p&gt;A natural join is a type of join operation in relational databases that automatically combines tables based on all columns with the same name and datatype in both tables.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Only columns that exist in both tables are used for the join condition, and only rows with matching values in these columns are included in the result.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;inner-join&quot;&gt;Inner join&lt;&#x2F;h4&gt;
+&lt;p&gt;An inner join is a fundamental relational database operation that combines rows from two tables based on a related column between them.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Requires explicit specification of the join condition. Can join on any column(s), not just those with matching names.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Rows from either table that do not have a matching row in the other table are excluded.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;  Employees ⋈ Departments
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;division-operation&quot;&gt;Division Operation (÷)&lt;&#x2F;h4&gt;
+&lt;h4 id=&quot;outer-join&quot;&gt;Outer Join&lt;&#x2F;h4&gt;
+&lt;h5 id=&quot;left-outer-join&quot;&gt;Left Outer Join (⟕)&lt;&#x2F;h5&gt;
+&lt;p&gt;Returns all rows from the left table, and the matched rows from the right table&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If there is no match, NULL values are returned for columns from the right table.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Useful when you want all records from the primary table and only the related records from the secondary table.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;  Syntax: R ⋉ S
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id=&quot;right-outer-join&quot;&gt;Right Outer Join (⟖)&lt;&#x2F;h5&gt;
+&lt;p&gt;Returns all rows from the right table, and the matched rows from the left table&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;If there is no match, NULL values are returned for columns from the left table.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Useful when you want all records from the secondary table and only the related records from the primary table.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;  Synatx: R ⋊ S
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h5 id=&quot;full-outer-join&quot;&gt;Full Outer Join (⟗)&lt;&#x2F;h5&gt;
+&lt;p&gt;Returns all rows when there is a match in either left or right table.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Rows that do not have a match in the other table will have NULL values for the columns from that table.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Useful when you want to combine all records from both tables, showing how they relate to each other, including non-matching records.&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;  Syntax: R ⋉ S ∪ R ⋊ S
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;span class=&quot;webring&quot;&gt;
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronLeft&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt; 
+&lt;a href=#&gt;Go Top &lt;&#x2F;a&gt; 
+&lt;a class=&quot;no-style&quot; href=#&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronRight&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Introduction to databse with SQL</title>
+        <published>2024-06-08T00:00:00+00:00</published>
+        <updated>2024-06-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.mukund.xyz/blog/introduction-to-database-with-sql/"/>
+        <id>https://blog.mukund.xyz/blog/introduction-to-database-with-sql/</id>
+        
+        <content type="html" xml:base="https://blog.mukund.xyz/blog/introduction-to-database-with-sql/">&lt;h3 id=&quot;what-is-database&quot;&gt;What is Database ?&lt;&#x2F;h3&gt;
+&lt;p&gt;Database is way to orginaze data that you can perform below four operation.&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;create&lt;&#x2F;li&gt;
+&lt;li&gt;read&lt;&#x2F;li&gt;
+&lt;li&gt;update&lt;&#x2F;li&gt;
+&lt;li&gt;delete&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;DBMS is a way to interact with database  using GUI or textual language&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;what-is-sql&quot;&gt;What is SQL&lt;&#x2F;h3&gt;
+&lt;p&gt;Structred  Qurey Language&lt;&#x2F;p&gt;
+&lt;p&gt;It is a language which used to interact with database to do that four operation&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;In this blog i am going to use SQLite&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;code&gt;&quot;Before Doing any change it always recommend to make  backup of it&quot;&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;i am using this repo for sample of database&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;https:&#x2F;&#x2F;github.com&#x2F;bradleygrant&#x2F;sakila-sqlite3
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To open your databse,&lt;&#x2F;p&gt;
+&lt;p&gt;Type this in you sql enviroment&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;command&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-command &quot;&gt;&lt;code class=&quot;language-command&quot; data-lang=&quot;command&quot;&gt;&lt;span&gt;$ sqllite3 master.db
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;After that make backup or clone and it will take around  10 min to load  your sql&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt;.clone &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;master_backup&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;db
+&lt;&#x2F;span&gt;&lt;span&gt;.open &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;master_backup&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;db
+&lt;&#x2F;span&gt;&lt;span&gt;.read &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;your_sql_table&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;sql
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Once prompt returns,you are ready to write SQL,&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;querying&quot;&gt;Querying&lt;&#x2F;h1&gt;
+&lt;p&gt;Now we can start our Journey by wrirting some query.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;select&quot;&gt;SELECT&lt;&#x2F;h3&gt;
+&lt;p&gt;To Know what’s inside our database. We use a keyword &lt;code&gt;SELECT&lt;&#x2F;code&gt; which allow to you select some row or all from the table inside the database.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;* &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;actor&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first_name&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;actor&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;PENELOPE
+&lt;&#x2F;span&gt;&lt;span&gt;NICK
+&lt;&#x2F;span&gt;&lt;span&gt;ED
+&lt;&#x2F;span&gt;&lt;span&gt;JENNIFER
+&lt;&#x2F;span&gt;&lt;span&gt;JOHNNY
+&lt;&#x2F;span&gt;&lt;span&gt;BETTE
+&lt;&#x2F;span&gt;&lt;span&gt;GRACE
+&lt;&#x2F;span&gt;&lt;span&gt;MATTHEW
+&lt;&#x2F;span&gt;&lt;span&gt;JOE
+&lt;&#x2F;span&gt;&lt;span&gt;CHRISTIAN
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;THORA
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here actor is table in our database and first_name is name of column.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;limit&quot;&gt;LIMIT&lt;&#x2F;h3&gt;
+&lt;p&gt;To see  from starting to specific amount row inside our database.We use this  Keyword &lt;code&gt;LIMIT&lt;&#x2F;code&gt; Which allow to specify the number of rows in qurey output&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first_name&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;actor&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;LIMIT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;PENELOPE
+&lt;&#x2F;span&gt;&lt;span&gt;NICK
+&lt;&#x2F;span&gt;&lt;span&gt;ED
+&lt;&#x2F;span&gt;&lt;span&gt;JENNIFER
+&lt;&#x2F;span&gt;&lt;span&gt;JOHNNY
+&lt;&#x2F;span&gt;&lt;span&gt;BETTE
+&lt;&#x2F;span&gt;&lt;span&gt;GRACE
+&lt;&#x2F;span&gt;&lt;span&gt;MATTHEW
+&lt;&#x2F;span&gt;&lt;span&gt;JOE
+&lt;&#x2F;span&gt;&lt;span&gt;CHRISTIAN
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;where&quot;&gt;WHERE&lt;&#x2F;h3&gt;
+&lt;p&gt;This Keyword &lt;code&gt;WHERE&lt;&#x2F;code&gt; is used to select rows based on condition.It will ouput rows when condition is true&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;if we want to find address of specific postal_code.the below code will print outall off with that postal code.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;71102&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;71102|1402 Zanzibar Boulevard
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here you can use diffrent operator&lt;&#x2F;p&gt;
+&lt;p&gt;for condition &lt;code&gt;=&lt;&#x2F;code&gt;(equal to)  &lt;code&gt;!=&lt;&#x2F;code&gt;(not equal to ) &lt;code&gt;&amp;lt;&amp;gt;&lt;&#x2F;code&gt; (not equal to )&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;if you want to find out address having  postal code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;!= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;; 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;35200|1913 Hanoi Way
+&lt;&#x2F;span&gt;&lt;span&gt;17886|1121 Loja Avenue
+&lt;&#x2F;span&gt;&lt;span&gt;83579|692 Joliet Street
+&lt;&#x2F;span&gt;&lt;span&gt;53561|1566 Inegl Manor
+&lt;&#x2F;span&gt;&lt;span&gt;42399|53 Idfu Parkway
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;27107|1325 Fukuyama Street
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here you can replace &lt;code&gt;!=&lt;&#x2F;code&gt; with &lt;code&gt;&amp;lt;&amp;gt;&lt;&#x2F;code&gt; the output will be same.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;lt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;35200|1913 Hanoi Way
+&lt;&#x2F;span&gt;&lt;span&gt;17886|1121 Loja Avenue
+&lt;&#x2F;span&gt;&lt;span&gt;83579|692 Joliet Street
+&lt;&#x2F;span&gt;&lt;span&gt;53561|1566 Inegl Manor
+&lt;&#x2F;span&gt;&lt;span&gt;42399|53 Idfu Parkway
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;27107|1325 Fukuyama Street
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;or We can also use a Keyword &lt;code&gt;NOT&lt;&#x2F;code&gt;,and result will be the same&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE&lt;&#x2F;span&gt;&lt;span&gt; NOT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;35200|1913 Hanoi Way
+&lt;&#x2F;span&gt;&lt;span&gt;17886|1121 Loja Avenue
+&lt;&#x2F;span&gt;&lt;span&gt;83579|692 Joliet Street
+&lt;&#x2F;span&gt;&lt;span&gt;53561|1566 Inegl Manor
+&lt;&#x2F;span&gt;&lt;span&gt;42399|53 Idfu Parkway
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;27107|1325 Fukuyama Street
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;To combine condition we can use Keyword &lt;code&gt;AND&lt;&#x2F;code&gt; and &lt;code&gt;OR&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;AND&lt;&#x2F;code&gt;
+Here both condition checked if true than it will show an output&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first_name&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;last_name&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;store_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;active&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;active&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;AND &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;store_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;124|SHEILA|WELLS|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;271|PENNY|NEAL|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;368|HARRY|ARCE|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;406|NATHAN|RUNYON|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;482|MAURICE|CRAWLEY|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;534|CHRISTIAN|JUNG|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;558|JIMMIE|EGGLESTON|1|0
+&lt;&#x2F;span&gt;&lt;span&gt;592|TERRANCE|ROUSH|1|0
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;here i select a customers those who have store_id 1 and they are not active (active = 0)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;OR&lt;&#x2F;code&gt;
+Here anyone condition is true than it will show an output&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first_name&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;last_name&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;store_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;active&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;active&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;OR &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;store_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|MARY|SMITH|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;2|PATRICIA|JOHNSON|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;3|LINDA|WILLIAMS|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;5|ELIZABETH|BROWN|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;7|MARIA|MILLER|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;10|DOROTHY|TAYLOR|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;12|NANCY|THOMAS|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;15|HELEN|HARRIS|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;16|SANDRA|MARTIN|2|0
+&lt;&#x2F;span&gt;&lt;span&gt;17|DONNA|THOMPSON|1|1
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;598|WADE|DELVALLE|1|1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select customer having store_id 1 and first_name is JORDAN&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first_name&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;last_name&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;store_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;active&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE&lt;&#x2F;span&gt;&lt;span&gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;active&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;0 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;OR &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;store_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;AND &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;first_name&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;JORDAN&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;560|JORDAN|ARCHULETA|1|1
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Here,paranthese indicate that &lt;code&gt;OR&lt;&#x2F;code&gt; clause should to executed first before &lt;code&gt;AND&lt;&#x2F;code&gt; clause.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;null&quot;&gt;NULL&lt;&#x2F;h3&gt;
+&lt;p&gt;it is possible to have missing data.&lt;code&gt;NULL&lt;&#x2F;code&gt; is a type keyword which can indicate to data that does not have a value or does not exit.&lt;&#x2F;p&gt;
+&lt;p&gt;For example i have database of address where some table have missing postal code&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;IS NULL&lt;&#x2F;code&gt;
+To select the address which does not have postal code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;IS &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;|47 MySakila Drive
+&lt;&#x2F;span&gt;&lt;span&gt;|28 MySQL Boulevard
+&lt;&#x2F;span&gt;&lt;span&gt;|23 Workhaven Lane
+&lt;&#x2F;span&gt;&lt;span&gt;|1411 Lillydale Drive
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;IS NOT NULL&lt;&#x2F;code&gt;
+To select the address which  have postal code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;IS NOT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;NULL&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;35200|1913 Hanoi Way
+&lt;&#x2F;span&gt;&lt;span&gt;17886|1121 Loja Avenue
+&lt;&#x2F;span&gt;&lt;span&gt;83579|692 Joliet Street
+&lt;&#x2F;span&gt;&lt;span&gt;53561|1566 Inegl Manor
+&lt;&#x2F;span&gt;&lt;span&gt;42399|53 Idfu Parkway
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;.
+&lt;&#x2F;span&gt;&lt;span&gt;27107|1325 Fukuyama Street
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;like&quot;&gt;LIKE&lt;&#x2F;h3&gt;
+&lt;p&gt;This Keyword is used to select data that roughly matches the specified string.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;LIKE&lt;&#x2F;code&gt; is used with operator &lt;code&gt;%&lt;&#x2F;code&gt;(match with given string  around them )&lt;code&gt;_&lt;&#x2F;code&gt;(match a single character)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title having word ‘love’&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;%love%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;374|GRAFFITI LOVE
+&lt;&#x2F;span&gt;&lt;span&gt;448|IDAHO LOVE
+&lt;&#x2F;span&gt;&lt;span&gt;449|IDENTITY LOVER
+&lt;&#x2F;span&gt;&lt;span&gt;458|INDIAN LOVE
+&lt;&#x2F;span&gt;&lt;span&gt;511|LAWRENCE LOVE
+&lt;&#x2F;span&gt;&lt;span&gt;535|LOVE SUICIDES
+&lt;&#x2F;span&gt;&lt;span&gt;536|LOVELY JINGLE
+&lt;&#x2F;span&gt;&lt;span&gt;537|LOVER TRUMAN
+&lt;&#x2F;span&gt;&lt;span&gt;538|LOVERBOY ATTACKS
+&lt;&#x2F;span&gt;&lt;span&gt;852|STRANGELOVE DESIRE
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title start with  word ‘love’&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;love%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;535|LOVE SUICIDES
+&lt;&#x2F;span&gt;&lt;span&gt;536|LOVELY JINGLE
+&lt;&#x2F;span&gt;&lt;span&gt;537|LOVER TRUMAN
+&lt;&#x2F;span&gt;&lt;span&gt;538|LOVERBOY ATTACKS
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title start with  only word ‘love’&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;love %&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;535|LOVE SUICIDE
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title start with  only word ‘D’ and know lengeth of the word&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;D____________&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;ouput&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;203|DAISY MENAGERIE
+&lt;&#x2F;span&gt;&lt;span&gt;222|DESERT POSEIDON
+&lt;&#x2F;span&gt;&lt;span&gt;233|DISCIPLE MOTHER
+&lt;&#x2F;span&gt;&lt;span&gt;237|DIVORCE SHINING
+&lt;&#x2F;span&gt;&lt;span&gt;243|DOORS PRESIDENT
+&lt;&#x2F;span&gt;&lt;span&gt;247|DOWNHILL ENOUGH
+&lt;&#x2F;span&gt;&lt;span&gt;249|DRACULA CRYSTAL
+&lt;&#x2F;span&gt;&lt;span&gt;256|DROP WATERFRONT
+&lt;&#x2F;span&gt;&lt;span&gt;266|DYNAMITE TARZAN
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title start with  character ‘D’ and end with ‘N’ know lengeth of the title&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;D______________N&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;226|DESTINY SATURDAY
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title start with  w and also contain n but dont know length of the word.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;w_n_%&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;956|WANDA CHAMBER
+&lt;&#x2F;span&gt;&lt;span&gt;976|WIND PHANTOM
+&lt;&#x2F;span&gt;&lt;span&gt;977|WINDOW SIDE
+&lt;&#x2F;span&gt;&lt;span&gt;983|WON DARES
+&lt;&#x2F;span&gt;&lt;span&gt;984|WONDERFUL DROP
+&lt;&#x2F;span&gt;&lt;span&gt;985|WONDERLAND CHRISTMAS
+&lt;&#x2F;span&gt;&lt;span&gt;986|WONKA SEA
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title start with  &lt;code&gt;w&lt;&#x2F;code&gt; and also contain &lt;code&gt;n&lt;&#x2F;code&gt; and  know the length of word.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;w_n_ %&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;976|WIND PHANTOM
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title word end with  &lt;code&gt;d&lt;&#x2F;code&gt; and also contain &lt;code&gt;a&lt;&#x2F;code&gt; but don’t know staring length of word.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;%da__&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;49|BADMAN DAWN
+&lt;&#x2F;span&gt;&lt;span&gt;129|CAUSE DATE
+&lt;&#x2F;span&gt;&lt;span&gt;328|FOREVER CANDIDATE
+&lt;&#x2F;span&gt;&lt;span&gt;386|GUMP DATE
+&lt;&#x2F;span&gt;&lt;span&gt;403|HARRY IDAHO
+&lt;&#x2F;span&gt;&lt;span&gt;825|SPEAKEASY DATE
+&lt;&#x2F;span&gt;&lt;span&gt;890|TIGHTS DAWN
+&lt;&#x2F;span&gt;&lt;span&gt;914|TROUBLE DATE
+&lt;&#x2F;span&gt;&lt;span&gt;995|YENTL IDAHO
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select title word end with  &lt;code&gt;d&lt;&#x2F;code&gt; and also contain &lt;code&gt;a&lt;&#x2F;code&gt; and  know length of word.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;LIKE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;#39;% da__&amp;#39;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;49|BADMAN DAWN
+&lt;&#x2F;span&gt;&lt;span&gt;129|CAUSE DATE
+&lt;&#x2F;span&gt;&lt;span&gt;386|GUMP DATE
+&lt;&#x2F;span&gt;&lt;span&gt;825|SPEAKEASY DATE
+&lt;&#x2F;span&gt;&lt;span&gt;890|TIGHTS DAWN
+&lt;&#x2F;span&gt;&lt;span&gt;914|TROUBLE DATE
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;ranges&quot;&gt;Ranges&lt;&#x2F;h3&gt;
+&lt;p&gt;We can also use the operators &lt;code&gt;&amp;lt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;&amp;lt;=&lt;&#x2F;code&gt; and &lt;code&gt;&amp;gt;=&lt;&#x2F;code&gt; in our conditions to match a range of values&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;To select payment amount between 1 and 3&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_date&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;AND &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;lt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|2.99|2005-08-22 19:41:37.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-06-17 20:54:58.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-07-10 06:31:24.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-07-29 12:56:59.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-07-31 21:58:56.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-08-02 13:44:53.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-08-17 03:52:18.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-08-19 06:26:04.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|1.99|2005-05-27 17:17:09.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|2.99|2005-05-29 22:43:55.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|2.99|2005-06-19 08:34:53.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|2.99|2005-07-29 11:07:04.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|1.99|2005-07-30 13:31:20.000
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;you can get same result  by using a keyword &lt;code&gt;BETWEEN&lt;&#x2F;code&gt; and &lt;code&gt;AND&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_date&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;BETWEEN &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;AND  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|2.99|2005-08-22 19:41:37.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-06-17 20:54:58.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-07-10 06:31:24.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-07-29 12:56:59.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-07-31 21:58:56.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-08-02 13:44:53.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-08-17 03:52:18.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|2.99|2005-08-19 06:26:04.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|1.99|2005-05-27 17:17:09.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|2.99|2005-05-29 22:43:55.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|2.99|2005-06-19 08:34:53.000
+&lt;&#x2F;span&gt;&lt;span&gt;3|2.99|2005-07-29 11:07:04.000
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select payment of 5$ or higher&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_date&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|5.99|2005-08-22 20:03:46.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|6.99|2005-07-10 12:38:56.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|2005-07-27 15:23:02.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|2005-07-27 18:40:20.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|2005-07-29 00:12:59.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|2005-07-29 17:14:29.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|10.99|2005-07-30 13:47:43.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|6.99|2005-07-30 16:21:13.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|6.99|2005-07-30 22:39:53.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|2005-08-02 07:41:41.000
+&lt;&#x2F;span&gt;&lt;span&gt;2|6.99|2005-08-02 10:43:48.000
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To further limit payment list of those who having rental id over 10000 and payment amount 5$ or higher .&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rental_id&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;5 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;AND &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rental_id&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10000&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|5.99|32|15315
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|51|11087
+&lt;&#x2F;span&gt;&lt;span&gt;2|6.99|52|11177
+&lt;&#x2F;span&gt;&lt;span&gt;2|5.99|57|14743
+&lt;&#x2F;span&gt;&lt;span&gt;3|5.99|79|10597
+&lt;&#x2F;span&gt;&lt;span&gt;3|8.99|81|13403
+&lt;&#x2F;span&gt;&lt;span&gt;3|8.99|83|14699
+&lt;&#x2F;span&gt;&lt;span&gt;4|8.99|101|12294
+&lt;&#x2F;span&gt;&lt;span&gt;4|6.99|104|13807
+&lt;&#x2F;span&gt;&lt;span&gt;5|9.99|137|12145
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select payment list amount less than 5&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rental_id&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;WHERE &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;1|2.99|1|76
+&lt;&#x2F;span&gt;&lt;span&gt;1|0.99|2|573
+&lt;&#x2F;span&gt;&lt;span&gt;1|0.99|4|1422
+&lt;&#x2F;span&gt;&lt;span&gt;1|4.99|6|1725
+&lt;&#x2F;span&gt;&lt;span&gt;1|4.99|7|2308
+&lt;&#x2F;span&gt;&lt;span&gt;1|0.99|8|2363
+&lt;&#x2F;span&gt;&lt;span&gt;1|3.99|9|3284
+&lt;&#x2F;span&gt;&lt;span&gt;1|4.99|12|5244
+&lt;&#x2F;span&gt;&lt;span&gt;1|4.99|13|5326
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;order-by&quot;&gt;ORDER BY&lt;&#x2F;h3&gt;
+&lt;p&gt;This keyword allows you to orgainze the returned rows in some specificed order.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The following query selects 10 payment amount  with 0 or less  in our database.
+which means &lt;code&gt;ORDER BY&lt;&#x2F;code&gt;  chooses ascending order by default.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rental_id&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;ORDER BY &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;LIMIT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;15|0|417|13968
+&lt;&#x2F;span&gt;&lt;span&gt;42|0|1178|15407
+&lt;&#x2F;span&gt;&lt;span&gt;43|0|1202|15745
+&lt;&#x2F;span&gt;&lt;span&gt;53|0|1483|14137
+&lt;&#x2F;span&gt;&lt;span&gt;60|0|1671|14741
+&lt;&#x2F;span&gt;&lt;span&gt;75|0|2060|14488
+&lt;&#x2F;span&gt;&lt;span&gt;75|0|2061|15191
+&lt;&#x2F;span&gt;&lt;span&gt;107|0|2902|15497
+&lt;&#x2F;span&gt;&lt;span&gt;155|0|4235|12352
+&lt;&#x2F;span&gt;&lt;span&gt;163|0|4450|15282
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;We will get same result by using keyword &lt;code&gt;ASC&lt;&#x2F;code&gt; as above for ascending order&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rental_id&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;ORDER BY &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;ASC  LIMIT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;15|0|417|13968
+&lt;&#x2F;span&gt;&lt;span&gt;42|0|1178|15407
+&lt;&#x2F;span&gt;&lt;span&gt;43|0|1202|15745
+&lt;&#x2F;span&gt;&lt;span&gt;53|0|1483|14137
+&lt;&#x2F;span&gt;&lt;span&gt;60|0|1671|14741
+&lt;&#x2F;span&gt;&lt;span&gt;75|0|2060|14488
+&lt;&#x2F;span&gt;&lt;span&gt;75|0|2061|15191
+&lt;&#x2F;span&gt;&lt;span&gt;107|0|2902|15497
+&lt;&#x2F;span&gt;&lt;span&gt;155|0|4235|12352
+&lt;&#x2F;span&gt;&lt;span&gt;163|0|4450|15282
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select top 10 highest payment , we use &lt;code&gt;DESC&lt;&#x2F;code&gt; keyword&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;customer_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment_id&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;rental_id&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;ORDER BY &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;DESC  LIMIT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;10&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;13|11.99|342|8831
+&lt;&#x2F;span&gt;&lt;span&gt;116|11.99|3146|14763
+&lt;&#x2F;span&gt;&lt;span&gt;195|11.99|5280|16040
+&lt;&#x2F;span&gt;&lt;span&gt;196|11.99|5281|106
+&lt;&#x2F;span&gt;&lt;span&gt;204|11.99|5550|15415
+&lt;&#x2F;span&gt;&lt;span&gt;237|11.99|6409|11479
+&lt;&#x2F;span&gt;&lt;span&gt;305|11.99|8272|2166
+&lt;&#x2F;span&gt;&lt;span&gt;362|11.99|9803|14759
+&lt;&#x2F;span&gt;&lt;span&gt;591|11.99|15821|4383
+&lt;&#x2F;span&gt;&lt;span&gt;592|11.99|15850|3973
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;aggregate-function&quot;&gt;Aggregate Function&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;code&gt;COUNT&lt;&#x2F;code&gt;,&lt;code&gt;AVG&lt;&#x2F;code&gt;,&lt;code&gt;MIN&lt;&#x2F;code&gt;,&lt;code&gt;MAX&lt;&#x2F;code&gt;,and &lt;code&gt;SUM&lt;&#x2F;code&gt; are called aggregate function.and allow us to performe the correspoing operation over multiple rows of data.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;To find avgrage length of movie from film database table we use &lt;code&gt;AVG&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;AVG&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;length&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;release_year&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;ACADEMY DINOSAUR|115.272|2006
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To round the average rating to 2 decimal points&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,ROUND(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;AVG&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;length&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;release_year&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;ACADEMY DINOSAUR|115.27|2006
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To rename the column in which the results are displayed, we use &lt;code&gt;AS&lt;&#x2F;code&gt; keyword to rename column.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,ROUND(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;AVG&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;length&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d3869b;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;release_year&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fe8019;&quot;&gt;AS &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;average length&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;; 
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;ACADEMY DINOSAUR|115.27|2006
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select the maximum rating in the database,we use &lt;code&gt;MAX&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;MAX&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;length&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;release_year&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;CHICAGO NORTH|185|2006
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To select the minimum rating in the database,we use &lt;code&gt;MAX&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;MIN&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;length&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;release_year&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;ALIEN CENTER|46|2006
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To count the total number of film length in the database&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span&gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;title&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;SUM&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;length&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;),&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;release_year&amp;quot;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;film&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;ACADEMY DINOSAUR|115272|2006
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;To count the number of address in our database&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;COUNT&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#fdf4c1;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;603
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Remember that we used &lt;code&gt;*&lt;&#x2F;code&gt; to select every row and column from the database. In this case, we are trying to count every row in the database and hence we use the &lt;code&gt;*&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;To count the number of postal code&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;COUNT&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;postal_code&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;address&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;599
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;We observe that the number of postal code is fewer than the number of rows in the database. This is because the &lt;code&gt;COUNT&lt;&#x2F;code&gt; function does not count &lt;code&gt;NULL&lt;&#x2F;code&gt; values.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;To count the number of payment transtion in the database&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;COUNT&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;16049
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;this query will count the number of payment times values that are not NULL. However, this may include duplicates. Another SQL keyword, DISTINCT, can be used to ensure that only distinct values are counted.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;To get diffrent number of payment amount&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;sql&quot; style=&quot;background-color:#282828;color:#fdf4c1aa;&quot; class=&quot;language-sql &quot;&gt;&lt;code class=&quot;language-sql&quot; data-lang=&quot;sql&quot;&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;SELECT &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fabd2f;&quot;&gt;COUNT&lt;&#x2F;span&gt;&lt;span&gt;(DISTINCT(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;amount&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)) &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fa5c4b;&quot;&gt;FROM &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b8bb26;&quot;&gt;&amp;quot;payment&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt; ;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;output&lt;&#x2F;p&gt;
+&lt;pre style=&quot;background-color:#282828;color:#fdf4c1aa;&quot;&gt;&lt;code&gt;&lt;span&gt;19
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;span class=&quot;webring&quot;&gt;
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronLeft&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt; 
+&lt;a href=#&gt;Go Top &lt;&#x2F;a&gt; 
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;why-free-software-is-good&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronRight&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Why Free software is good ?</title>
+        <published>2024-05-26T00:00:00+00:00</published>
+        <updated>2024-05-26T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.mukund.xyz/blog/why-free-software-is-good/"/>
+        <id>https://blog.mukund.xyz/blog/why-free-software-is-good/</id>
+        
+        <content type="html" xml:base="https://blog.mukund.xyz/blog/why-free-software-is-good/">&lt;h3 id=&quot;what-is-free-software&quot;&gt;What is free Software&lt;&#x2F;h3&gt;
+&lt;p&gt;A program is free software which respect user Freedom ‘Its free as freedom’ Its means Zero price but we are not taking about price, We talking about more freedom.&lt;&#x2F;p&gt;
+&lt;p&gt;More precisely, To support defination free software there are four essential freedoms:&lt;&#x2F;p&gt;
+&lt;ol start=&quot;0&quot;&gt;
+&lt;li&gt;The freedom to run the program as you wish, for any purpose.&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to study ,to change and  how the program works.&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to redistribute copies When you wish .&lt;&#x2F;li&gt;
+&lt;li&gt;The freedom to distribute copies of your modified versions to others.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;ul&gt;
+&lt;li&gt;“When user control program that’s  free software and When program control user that’s Proprietary Software” - Richard Stallman&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;what-is-proprietary-software&quot;&gt;what is Proprietary Software&lt;&#x2F;h3&gt;
+&lt;p&gt;Proprietary software, also called nonfree software, means software that doesn’t respect users’ freedom and community.&lt;&#x2F;p&gt;
+&lt;p&gt;A proprietary program puts its developer or owner in a position of power over its users. This power is in itself an injustice.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;free-software-vs-proprietary-software&quot;&gt;Free Software Vs Proprietary Software&lt;&#x2F;h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Points&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: center&quot;&gt;Free Software&lt;&#x2F;th&gt;&lt;th style=&quot;text-align: right&quot;&gt;Proprietary Software&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Modify&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Freedom to change anything&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;restrict to change thing&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Jail&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;No censorship on application&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;censorship on application&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Distribution&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;freely distribute&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;cannot freely distribute&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Source Code&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Have access&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Not have acces&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Run Program&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Free of cost&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;pay of cost&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Customization&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: center&quot;&gt;Highly customizable&lt;&#x2F;td&gt;&lt;td style=&quot;text-align: right&quot;&gt;Limited customization&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h3 id=&quot;free-software-is-even-more-important-now&quot;&gt;Free Software Is Even More Important Now&lt;&#x2F;h3&gt;
+&lt;p&gt;With free software, the users control the program, both individually and collectively. So they control what their computers do&lt;&#x2F;p&gt;
+&lt;p&gt;With proprietary software, the program controls the users, and some other entity (the developer or “owner”) controls the program
+Even when proprietary software isn’t downright malicious, its developers have an incentive to make it addictive, controlling and manipulative.&lt;&#x2F;p&gt;
+&lt;p&gt;Freedom means having control over your own life. If you use a program to carry out activities in your life, your freedom depends on your having control over the program. You deserve to have control over the programs you use, and all the more so when you use them for something important in your life.&lt;&#x2F;p&gt;
+&lt;p&gt;“The Free Software Foundation (FSF) is a nonprofit with a worldwide mission to promote computer user freedom. We defend the rights of all software users.”&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&quot;webring&quot;&gt;
+&lt;a class=&quot;no-style&quot; href=..&amp;#x2F;&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronLeft&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt; 
+&lt;a href=#&gt;Go Top &lt;&#x2F;a&gt; 
+&lt;a class=&quot;no-style&quot; href=#&gt;&lt;svg class=&quot;icons&quot;&gt;&lt;use href=&quot;https:&#x2F;&#x2F;blog.mukund.xyz&#x2F;icons.svg#chevronRight&quot;&gt;&lt;&#x2F;use&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;a&gt;&lt;&#x2F;span&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+</feed>

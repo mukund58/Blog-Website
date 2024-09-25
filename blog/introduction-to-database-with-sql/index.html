@@ -1,0 +1,277 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta content="IE=edge" http-equiv=X-UA-Compatible><meta content="text/html; charset=UTF-8" http-equiv=content-type><meta content="width=device-width,initial-scale=1,user-scalable=no" name=viewport><meta content="index, follow" name=robots><title>Introduction to databse with SQL</title><meta content="Introduction to databse with SQL" name=title><meta content=mukund58 name=author><meta content="For Rss Feed" name=description><meta content=website property=og:type><meta content=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/ property=og:url><meta content=Blog property=og:site_name><meta content="Introduction to databse with SQL" property=og:title><meta content="For Rss Feed" property=og:description><meta content=https://blog.mukund.xyz/favicon.ico property=og:image><meta content=summary_large_image property=twitter:card><meta content=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/ property=twitter:url><meta content="Introduction to databse with SQL" property=twitter:title><meta content="For Rss Feed" property=twitter:description><meta content=https://blog.mukund.xyz/favicon.ico property=twitter:image><link href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/ rel=canonical><link rel="shortcut icon" href=https://blog.mukund.xyz/favicon.ico type=image/x-icon><link href=https://blog.mukund.xyz/atom.xml rel=alternate title=RSS type=application/atom+xml><link href=https://speyll.github.io/suCSS/reset-min.css rel=stylesheet><link href=https://speyll.github.io/suCSS/suCSS-min.css rel=stylesheet><link href=https://blog.mukund.xyz/css/style.css rel=stylesheet><script defer src=https://blog.mukund.xyz/js/script.js></script><body><header><nav id=nav-bar><a href=/> /home/ </a><a href=/about> /about/ </a><a href=/blog> /blog/ </a><div><input id=theme-toggle style=display:none type=checkbox><label for=theme-toggle id=theme-toggle-label><svg class=icons id=theme-icon><use href=https://blog.mukund.xyz/icons.svg#lightMode></use></svg></label><audio id=theme-sound><source src=https://blog.mukund.xyz/click.ogg type=audio/ogg></audio></div></nav></header><main><div><a href=..>..</a>/<span class=accent-data>introduction-to-database-with-sql</span></div><time datetime=2024-06-08>Published on: <span class=accent-data>2024-06-08</span></time><address rel=author>By <span class=accent-data>mukund58</span></address><h1>Introduction to databse with SQL</h1><h2>Table of contents</h2><ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#what-is-database>What is Database ?</a><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#what-is-sql>What is SQL</a><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#querying>Querying</a> <ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#select>SELECT</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#limit>LIMIT</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#where>WHERE</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#null>NULL</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#like>LIKE</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#ranges>Ranges</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#order-by>ORDER BY</a> <ul></ul><li><a href=https://blog.mukund.xyz/blog/introduction-to-database-with-sql/#aggregate-function>Aggregate Function</a> <ul></ul></ul></ul><h3 id=what-is-database>What is Database ?</h3><p>Database is way to orginaze data that you can perform below four operation.<ol><li>create<li>read<li>update<li>delete</ol><p>DBMS is a way to interact with database using GUI or textual language<h3 id=what-is-sql>What is SQL</h3><p>Structred Qurey Language<p>It is a language which used to interact with database to do that four operation<ul><li>In this blog i am going to use SQLite</ul><p><code>"Before Doing any change it always recommend to make  backup of it"</code><p>i am using this repo for sample of database<pre style=color:#fdf4c1aa;background-color:#282828><code><span>https://github.com/bradleygrant/sakila-sqlite3
+</span></code></pre><p>To open your databse,<p>Type this in you sql enviroment<pre class=language-command data-lang=command style=color:#fdf4c1aa;background-color:#282828><code class=language-command data-lang=command><span>$ sqllite3 master.db
+</span></code></pre><p>After that make backup or clone and it will take around 10 min to load your sql<pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span>.clone </span><span style=color:#b8bb26>master_backup</span><span>.</span><span style=color:#b8bb26>db
+</span><span>.open </span><span style=color:#b8bb26>master_backup</span><span>.</span><span style=color:#b8bb26>db
+</span><span>.read </span><span style=color:#b8bb26>your_sql_table</span><span>.</span><span style=color:#b8bb26>sql
+</span></code></pre><p>Once prompt returns,you are ready to write SQL,<h1 id=querying>Querying</h1><p>Now we can start our Journey by wrirting some query.<h3 id=select>SELECT</h3><p>To Know what’s inside our database. We use a keyword <code>SELECT</code> which allow to you select some row or all from the table inside the database.<pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#fdf4c1>* </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>'actor'</span><span> ;
+</span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"first_name" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"actor"</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>PENELOPE
+</span><span>NICK
+</span><span>ED
+</span><span>JENNIFER
+</span><span>JOHNNY
+</span><span>BETTE
+</span><span>GRACE
+</span><span>MATTHEW
+</span><span>JOE
+</span><span>CHRISTIAN
+</span><span>.
+</span><span>.
+</span><span>.
+</span><span>THORA
+</span></code></pre><p>here actor is table in our database and first_name is name of column.<h3 id=limit>LIMIT</h3><p>To see from starting to specific amount row inside our database.We use this Keyword <code>LIMIT</code> Which allow to specify the number of rows in qurey output<pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"first_name" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"actor" </span><span style=color:#fa5c4b>LIMIT </span><span style=color:#d3869b>10</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>PENELOPE
+</span><span>NICK
+</span><span>ED
+</span><span>JENNIFER
+</span><span>JOHNNY
+</span><span>BETTE
+</span><span>GRACE
+</span><span>MATTHEW
+</span><span>JOE
+</span><span>CHRISTIAN
+</span></code></pre><h3 id=where>WHERE</h3><p>This Keyword <code>WHERE</code> is used to select rows based on condition.It will ouput rows when condition is true<ul><li>if we want to find address of specific postal_code.the below code will print outall off with that postal code.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"postal_code"</span><span>,</span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"postal_code" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>71102</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>71102|1402 Zanzibar Boulevard
+</span></code></pre><p>Here you can use diffrent operator<p>for condition <code>=</code>(equal to) <code>!=</code>(not equal to ) <code><></code> (not equal to )<ul><li>if you want to find out address having postal code</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"postal_code"</span><span>, </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"postal_code" </span><span style=color:#fe8019>!= </span><span style=color:#d3869b>0</span><span>; 
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>35200|1913 Hanoi Way
+</span><span>17886|1121 Loja Avenue
+</span><span>83579|692 Joliet Street
+</span><span>53561|1566 Inegl Manor
+</span><span>42399|53 Idfu Parkway
+</span><span>.
+</span><span>.
+</span><span>.
+</span><span>27107|1325 Fukuyama Street
+</span></code></pre><p>here you can replace <code>!=</code> with <code><></code> the output will be same.<pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"postal_code"</span><span>, </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"postal_code" </span><span style=color:#fe8019><> </span><span style=color:#d3869b>0</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>35200|1913 Hanoi Way
+</span><span>17886|1121 Loja Avenue
+</span><span>83579|692 Joliet Street
+</span><span>53561|1566 Inegl Manor
+</span><span>42399|53 Idfu Parkway
+</span><span>.
+</span><span>.
+</span><span>.
+</span><span>27107|1325 Fukuyama Street
+</span></code></pre><ul><li>or We can also use a Keyword <code>NOT</code>,and result will be the same</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"postal_code"</span><span>, </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>WHERE</span><span> NOT </span><span style=color:#b8bb26>"postal_code" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>0</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>35200|1913 Hanoi Way
+</span><span>17886|1121 Loja Avenue
+</span><span>83579|692 Joliet Street
+</span><span>53561|1566 Inegl Manor
+</span><span>42399|53 Idfu Parkway
+</span><span>.
+</span><span>.
+</span><span>.
+</span><span>27107|1325 Fukuyama Street
+</span></code></pre><p>To combine condition we can use Keyword <code>AND</code> and <code>OR</code><ul><li><code>AND</code> Here both condition checked if true than it will show an output</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>, </span><span style=color:#b8bb26>"first_name"</span><span>, </span><span style=color:#b8bb26>"last_name"</span><span>, </span><span style=color:#b8bb26>"store_id"</span><span>, </span><span style=color:#b8bb26>"active" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"customer" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"active" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>0 </span><span style=color:#fe8019>AND </span><span style=color:#b8bb26>"store_id" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>1</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>124|SHEILA|WELLS|1|0
+</span><span>271|PENNY|NEAL|1|0
+</span><span>368|HARRY|ARCE|1|0
+</span><span>406|NATHAN|RUNYON|1|0
+</span><span>482|MAURICE|CRAWLEY|1|0
+</span><span>534|CHRISTIAN|JUNG|1|0
+</span><span>558|JIMMIE|EGGLESTON|1|0
+</span><span>592|TERRANCE|ROUSH|1|0
+</span></code></pre><p>here i select a customers those who have store_id 1 and they are not active (active = 0)<ul><li><code>OR</code> Here anyone condition is true than it will show an output</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>, </span><span style=color:#b8bb26>"first_name"</span><span>, </span><span style=color:#b8bb26>"last_name"</span><span>, </span><span style=color:#b8bb26>"store_id"</span><span>, </span><span style=color:#b8bb26>"active" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"customer" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"active" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>0 </span><span style=color:#fe8019>OR </span><span style=color:#b8bb26>"store_id" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>1</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>1|MARY|SMITH|1|1
+</span><span>2|PATRICIA|JOHNSON|1|1
+</span><span>3|LINDA|WILLIAMS|1|1
+</span><span>5|ELIZABETH|BROWN|1|1
+</span><span>7|MARIA|MILLER|1|1
+</span><span>10|DOROTHY|TAYLOR|1|1
+</span><span>12|NANCY|THOMAS|1|1
+</span><span>15|HELEN|HARRIS|1|1
+</span><span>16|SANDRA|MARTIN|2|0
+</span><span>17|DONNA|THOMPSON|1|1
+</span><span>.
+</span><span>.
+</span><span>.
+</span><span>598|WADE|DELVALLE|1|1
+</span></code></pre><ul><li>To select customer having store_id 1 and first_name is JORDAN</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>, </span><span style=color:#b8bb26>"first_name"</span><span>, </span><span style=color:#b8bb26>"last_name"</span><span>, </span><span style=color:#b8bb26>"store_id"</span><span>, </span><span style=color:#b8bb26>"active" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"customer" </span><span style=color:#fa5c4b>WHERE</span><span> (</span><span style=color:#b8bb26>"active" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>0 </span><span style=color:#fe8019>OR </span><span style=color:#b8bb26>"store_id" </span><span style=color:#fe8019>= </span><span style=color:#d3869b>1</span><span>) </span><span style=color:#fe8019>AND </span><span style=color:#b8bb26>"first_name" </span><span style=color:#fe8019>= </span><span style=color:#b8bb26>'JORDAN'</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>560|JORDAN|ARCHULETA|1|1
+</span></code></pre><p>Here,paranthese indicate that <code>OR</code> clause should to executed first before <code>AND</code> clause.<h3 id=null>NULL</h3><p>it is possible to have missing data.<code>NULL</code> is a type keyword which can indicate to data that does not have a value or does not exit.<p>For example i have database of address where some table have missing postal code<ul><li><code>IS NULL</code> To select the address which does not have postal code</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"postal_code"</span><span>,</span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"postal_code" </span><span style=color:#fe8019>IS </span><span style=color:#d3869b>NULL</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>|47 MySakila Drive
+</span><span>|28 MySQL Boulevard
+</span><span>|23 Workhaven Lane
+</span><span>|1411 Lillydale Drive
+</span></code></pre><ul><li><code>IS NOT NULL</code> To select the address which have postal code</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"postal_code"</span><span>,</span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"postal_code" </span><span style=color:#fe8019>IS NOT </span><span style=color:#d3869b>NULL</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>35200|1913 Hanoi Way
+</span><span>17886|1121 Loja Avenue
+</span><span>83579|692 Joliet Street
+</span><span>53561|1566 Inegl Manor
+</span><span>42399|53 Idfu Parkway
+</span><span>.
+</span><span>.
+</span><span>.
+</span><span>27107|1325 Fukuyama Street
+</span></code></pre><h3 id=like>LIKE</h3><p>This Keyword is used to select data that roughly matches the specified string.<p><code>LIKE</code> is used with operator <code>%</code>(match with given string around them )<code>_</code>(match a single character)<ul><li>To select title having word ‘love’</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'%love%'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>374|GRAFFITI LOVE
+</span><span>448|IDAHO LOVE
+</span><span>449|IDENTITY LOVER
+</span><span>458|INDIAN LOVE
+</span><span>511|LAWRENCE LOVE
+</span><span>535|LOVE SUICIDES
+</span><span>536|LOVELY JINGLE
+</span><span>537|LOVER TRUMAN
+</span><span>538|LOVERBOY ATTACKS
+</span><span>852|STRANGELOVE DESIRE
+</span></code></pre><ul><li>To select title start with word ‘love’</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'love%'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>535|LOVE SUICIDES
+</span><span>536|LOVELY JINGLE
+</span><span>537|LOVER TRUMAN
+</span><span>538|LOVERBOY ATTACKS
+</span></code></pre><ul><li>To select title start with only word ‘love’</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'love %'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>535|LOVE SUICIDE
+</span></code></pre><ul><li>To select title start with only word ‘D’ and know lengeth of the word</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span> </span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'D____________'</span><span> ;
+</span></code></pre><p>ouput<pre style=color:#fdf4c1aa;background-color:#282828><code><span>203|DAISY MENAGERIE
+</span><span>222|DESERT POSEIDON
+</span><span>233|DISCIPLE MOTHER
+</span><span>237|DIVORCE SHINING
+</span><span>243|DOORS PRESIDENT
+</span><span>247|DOWNHILL ENOUGH
+</span><span>249|DRACULA CRYSTAL
+</span><span>256|DROP WATERFRONT
+</span><span>266|DYNAMITE TARZAN
+</span></code></pre><ul><li>To select title start with character ‘D’ and end with ‘N’ know lengeth of the title</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'D______________N'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>226|DESTINY SATURDAY
+</span></code></pre><ul><li>To select title start with w and also contain n but dont know length of the word.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'w_n_%'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>956|WANDA CHAMBER
+</span><span>976|WIND PHANTOM
+</span><span>977|WINDOW SIDE
+</span><span>983|WON DARES
+</span><span>984|WONDERFUL DROP
+</span><span>985|WONDERLAND CHRISTMAS
+</span><span>986|WONKA SEA
+</span></code></pre><ul><li>To select title start with <code>w</code> and also contain <code>n</code> and know the length of word.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'w_n_ %'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>976|WIND PHANTOM
+</span></code></pre><ul><li>To select title word end with <code>d</code> and also contain <code>a</code> but don’t know staring length of word.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'%da__'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>49|BADMAN DAWN
+</span><span>129|CAUSE DATE
+</span><span>328|FOREVER CANDIDATE
+</span><span>386|GUMP DATE
+</span><span>403|HARRY IDAHO
+</span><span>825|SPEAKEASY DATE
+</span><span>890|TIGHTS DAWN
+</span><span>914|TROUBLE DATE
+</span><span>995|YENTL IDAHO
+</span></code></pre><ul><li>To select title word end with <code>d</code> and also contain <code>a</code> and know length of word.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"film_id"</span><span>,  </span><span style=color:#b8bb26>"title"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"title" </span><span style=color:#fe8019>LIKE </span><span style=color:#b8bb26>'% da__'</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>49|BADMAN DAWN
+</span><span>129|CAUSE DATE
+</span><span>386|GUMP DATE
+</span><span>825|SPEAKEASY DATE
+</span><span>890|TIGHTS DAWN
+</span><span>914|TROUBLE DATE
+</span></code></pre><h3 id=ranges>Ranges</h3><p>We can also use the operators <code><</code>, <code>></code>, <code><=</code> and <code>>=</code> in our conditions to match a range of values<ul><li>To select payment amount between 1 and 3</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_date"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"amount" </span><span style=color:#fe8019>>=</span><span style=color:#d3869b>1 </span><span style=color:#fe8019>AND </span><span style=color:#b8bb26>"amount" </span><span style=color:#fe8019><= </span><span style=color:#d3869b>3</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>1|2.99|2005-08-22 19:41:37.000
+</span><span>2|2.99|2005-06-17 20:54:58.000
+</span><span>2|2.99|2005-07-10 06:31:24.000
+</span><span>2|2.99|2005-07-29 12:56:59.000
+</span><span>2|2.99|2005-07-31 21:58:56.000
+</span><span>2|2.99|2005-08-02 13:44:53.000
+</span><span>2|2.99|2005-08-17 03:52:18.000
+</span><span>2|2.99|2005-08-19 06:26:04.000
+</span><span>3|1.99|2005-05-27 17:17:09.000
+</span><span>3|2.99|2005-05-29 22:43:55.000
+</span><span>3|2.99|2005-06-19 08:34:53.000
+</span><span>3|2.99|2005-07-29 11:07:04.000
+</span><span>3|1.99|2005-07-30 13:31:20.000
+</span></code></pre><ul><li>you can get same result by using a keyword <code>BETWEEN</code> and <code>AND</code></ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span> </span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_date"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"amount" </span><span style=color:#fe8019>BETWEEN </span><span style=color:#d3869b>1 </span><span style=color:#fe8019>AND  </span><span style=color:#d3869b>3</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>1|2.99|2005-08-22 19:41:37.000
+</span><span>2|2.99|2005-06-17 20:54:58.000
+</span><span>2|2.99|2005-07-10 06:31:24.000
+</span><span>2|2.99|2005-07-29 12:56:59.000
+</span><span>2|2.99|2005-07-31 21:58:56.000
+</span><span>2|2.99|2005-08-02 13:44:53.000
+</span><span>2|2.99|2005-08-17 03:52:18.000
+</span><span>2|2.99|2005-08-19 06:26:04.000
+</span><span>3|1.99|2005-05-27 17:17:09.000
+</span><span>3|2.99|2005-05-29 22:43:55.000
+</span><span>3|2.99|2005-06-19 08:34:53.000
+</span><span>3|2.99|2005-07-29 11:07:04.000
+</span></code></pre><ul><li>To select payment of 5$ or higher</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_date"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"amount" </span><span style=color:#fe8019>> </span><span style=color:#d3869b>5</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>1|5.99|2005-08-22 20:03:46.000
+</span><span>2|6.99|2005-07-10 12:38:56.000
+</span><span>2|5.99|2005-07-27 15:23:02.000
+</span><span>2|5.99|2005-07-27 18:40:20.000
+</span><span>2|5.99|2005-07-29 00:12:59.000
+</span><span>2|5.99|2005-07-29 17:14:29.000
+</span><span>2|10.99|2005-07-30 13:47:43.000
+</span><span>2|6.99|2005-07-30 16:21:13.000
+</span><span>2|6.99|2005-07-30 22:39:53.000
+</span><span>2|5.99|2005-08-02 07:41:41.000
+</span><span>2|6.99|2005-08-02 10:43:48.000
+</span></code></pre><ul><li>To further limit payment list of those who having rental id over 10000 and payment amount 5$ or higher .</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_id"</span><span>, </span><span style=color:#b8bb26>"rental_id"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"amount" </span><span style=color:#fe8019>>
+</span><span style=color:#d3869b>5 </span><span style=color:#fe8019>AND </span><span style=color:#b8bb26>"rental_id" </span><span style=color:#fe8019>> </span><span style=color:#d3869b>10000</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>1|5.99|32|15315
+</span><span>2|5.99|51|11087
+</span><span>2|6.99|52|11177
+</span><span>2|5.99|57|14743
+</span><span>3|5.99|79|10597
+</span><span>3|8.99|81|13403
+</span><span>3|8.99|83|14699
+</span><span>4|8.99|101|12294
+</span><span>4|6.99|104|13807
+</span><span>5|9.99|137|12145
+</span></code></pre><ul><li>To select payment list amount less than 5</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_id"</span><span>, </span><span style=color:#b8bb26>"rental_id"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>WHERE </span><span style=color:#b8bb26>"amount"</span><span style=color:#fe8019><</span><span style=color:#d3869b>5</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>1|2.99|1|76
+</span><span>1|0.99|2|573
+</span><span>1|0.99|4|1422
+</span><span>1|4.99|6|1725
+</span><span>1|4.99|7|2308
+</span><span>1|0.99|8|2363
+</span><span>1|3.99|9|3284
+</span><span>1|4.99|12|5244
+</span><span>1|4.99|13|5326
+</span></code></pre><h3 id=order-by>ORDER BY</h3><p>This keyword allows you to orgainze the returned rows in some specificed order.<ul><li>The following query selects 10 payment amount with 0 or less in our database. which means <code>ORDER BY</code> chooses ascending order by default.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span> </span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_id"</span><span>, </span><span style=color:#b8bb26>"rental_id"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>ORDER BY </span><span style=color:#b8bb26>"amount"  </span><span style=color:#fa5c4b>LIMIT </span><span style=color:#d3869b>10</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>15|0|417|13968
+</span><span>42|0|1178|15407
+</span><span>43|0|1202|15745
+</span><span>53|0|1483|14137
+</span><span>60|0|1671|14741
+</span><span>75|0|2060|14488
+</span><span>75|0|2061|15191
+</span><span>107|0|2902|15497
+</span><span>155|0|4235|12352
+</span><span>163|0|4450|15282
+</span></code></pre><ul><li>We will get same result by using keyword <code>ASC</code> as above for ascending order</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_id"</span><span>, </span><span style=color:#b8bb26>"rental_id"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>ORDER BY </span><span style=color:#b8bb26>"amount"</span><span style=color:#fa5c4b>ASC  LIMIT </span><span style=color:#d3869b>10</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>15|0|417|13968
+</span><span>42|0|1178|15407
+</span><span>43|0|1202|15745
+</span><span>53|0|1483|14137
+</span><span>60|0|1671|14741
+</span><span>75|0|2060|14488
+</span><span>75|0|2061|15191
+</span><span>107|0|2902|15497
+</span><span>155|0|4235|12352
+</span><span>163|0|4450|15282
+</span></code></pre><ul><li>To select top 10 highest payment , we use <code>DESC</code> keyword</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"customer_id"</span><span>,</span><span style=color:#b8bb26>"amount"</span><span>, </span><span style=color:#b8bb26>"payment_id"</span><span>, </span><span style=color:#b8bb26>"rental_id"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment" </span><span style=color:#fa5c4b>ORDER BY </span><span style=color:#b8bb26>"amount"</span><span style=color:#fa5c4b>DESC  LIMIT </span><span style=color:#d3869b>10</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>13|11.99|342|8831
+</span><span>116|11.99|3146|14763
+</span><span>195|11.99|5280|16040
+</span><span>196|11.99|5281|106
+</span><span>204|11.99|5550|15415
+</span><span>237|11.99|6409|11479
+</span><span>305|11.99|8272|2166
+</span><span>362|11.99|9803|14759
+</span><span>591|11.99|15821|4383
+</span><span>592|11.99|15850|3973
+</span></code></pre><h3 id=aggregate-function>Aggregate Function</h3><p><code>COUNT</code>,<code>AVG</code>,<code>MIN</code>,<code>MAX</code>,and <code>SUM</code> are called aggregate function.and allow us to performe the correspoing operation over multiple rows of data.<ul><li>To find avgrage length of movie from film database table we use <code>AVG</code></ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span> </span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"title"</span><span>,</span><span style=color:#fabd2f>AVG</span><span>(</span><span style=color:#b8bb26>"length"</span><span>),</span><span style=color:#b8bb26>"release_year" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film"</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>ACADEMY DINOSAUR|115.272|2006
+</span></code></pre><ul><li>To round the average rating to 2 decimal points</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"title"</span><span>,ROUND(</span><span style=color:#fabd2f>AVG</span><span>(</span><span style=color:#b8bb26>"length"</span><span>),</span><span style=color:#d3869b>2</span><span>),</span><span style=color:#b8bb26>"release_year" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film"</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>ACADEMY DINOSAUR|115.27|2006
+</span></code></pre><ul><li>To rename the column in which the results are displayed, we use <code>AS</code> keyword to rename column.</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span> </span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"title"</span><span>,ROUND(</span><span style=color:#fabd2f>AVG</span><span>(</span><span style=color:#b8bb26>"length"</span><span>),</span><span style=color:#d3869b>3</span><span>),</span><span style=color:#b8bb26>"release_year" </span><span style=color:#fe8019>AS </span><span style=color:#b8bb26>"average length" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film"</span><span>; 
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>ACADEMY DINOSAUR|115.27|2006
+</span></code></pre><ul><li>To select the maximum rating in the database,we use <code>MAX</code></ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"title"</span><span>,</span><span style=color:#fabd2f>MAX</span><span>(</span><span style=color:#b8bb26>"length"</span><span>),</span><span style=color:#b8bb26>"release_year" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film"</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>CHICAGO NORTH|185|2006
+</span></code></pre><ul><li>To select the minimum rating in the database,we use <code>MAX</code></ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"title"</span><span>,</span><span style=color:#fabd2f>MIN</span><span>(</span><span style=color:#b8bb26>"length"</span><span>),</span><span style=color:#b8bb26>"release_year" </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film"</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>ALIEN CENTER|46|2006
+</span></code></pre><ul><li>To count the total number of film length in the database</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span> </span><span style=color:#fa5c4b>SELECT </span><span style=color:#b8bb26>"title"</span><span>,</span><span style=color:#fabd2f>SUM</span><span>(</span><span style=color:#b8bb26>"length"</span><span>),</span><span style=color:#b8bb26>"release_year"  </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"film"</span><span>;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>ACADEMY DINOSAUR|115272|2006
+</span></code></pre><ul><li>To count the number of address in our database</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#fabd2f>COUNT</span><span>(</span><span style=color:#fdf4c1>*</span><span>) </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address"</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>603
+</span></code></pre><p>Remember that we used <code>*</code> to select every row and column from the database. In this case, we are trying to count every row in the database and hence we use the <code>*</code>.<ul><li>To count the number of postal code</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#fabd2f>COUNT</span><span>(</span><span style=color:#b8bb26>"postal_code"</span><span>) </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"address"
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>599
+</span></code></pre><p>We observe that the number of postal code is fewer than the number of rows in the database. This is because the <code>COUNT</code> function does not count <code>NULL</code> values.<ul><li>To count the number of payment transtion in the database</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#fabd2f>COUNT</span><span>(</span><span style=color:#b8bb26>"amount"</span><span>) </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment"</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>16049
+</span></code></pre><p>this query will count the number of payment times values that are not NULL. However, this may include duplicates. Another SQL keyword, DISTINCT, can be used to ensure that only distinct values are counted.<ul><li>To get diffrent number of payment amount</ul><pre class=language-sql data-lang=sql style=color:#fdf4c1aa;background-color:#282828><code class=language-sql data-lang=sql><span style=color:#fa5c4b>SELECT </span><span style=color:#fabd2f>COUNT</span><span>(DISTINCT(</span><span style=color:#b8bb26>"amount"</span><span>)) </span><span style=color:#fa5c4b>FROM </span><span style=color:#b8bb26>"payment"</span><span> ;
+</span></code></pre><p>output<pre style=color:#fdf4c1aa;background-color:#282828><code><span>19
+</span></code></pre><span class=webring> <a class=no-style href=../><svg class=icons><use href=https://blog.mukund.xyz/icons.svg#chevronLeft></use></svg></a> <a href=#>Go Top </a> <a class=no-style href=../why-free-software-is-good><svg class=icons><use href=https://blog.mukund.xyz/icons.svg#chevronRight></use></svg></a></span><p class=tags-data></main><footer><hr><div id=footer-container><div><a rel="noopener noreferrer" href=https://blog.mukund.xyz/atom.xml target=_blank>Subscribe Via RSS Feed</a></div><div><a rel="noopener noreferrer" title="Subscribe via RSS for updates." class=no-style href=https://blog.mukund.xyz/atom.xml target=_blank><svg class=icons><use href=https://blog.mukund.xyz/icons.svg#rss></use></svg></a></div></div></footer>
